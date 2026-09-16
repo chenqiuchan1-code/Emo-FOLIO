@@ -64,8 +64,7 @@ python -m unittest discover -s tests -v
 
 These commands verify the installed runtime, the alignment of books 1-50 with
 their annotation files and page images, and the post-processing/evaluation
-smoke path. For a reviewer-oriented end-to-end
-walkthrough and the exact reproducibility boundary, see
+pipeline. For detailed setup, execution, and reproducibility limits, see
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 
 A precomputed, no-API example for Full-book E2E, CoT, and MOSAIC is available
@@ -93,10 +92,10 @@ Alternatively, export the required variables with any environment manager.
 Never commit API keys. The complete variable list and the local/remote image
 options for InternVL are documented in `configs/example.env`.
 
-### One-command reviewer workflow
+### Run the complete pipeline
 
-After configuring `.env`, the following command runs MOSAIC on the checked-in
-one-book smoke-test selection and then performs post-processing and evaluation:
+After configuring `.env`, the following command runs MOSAIC on the default
+one-book example, followed by post-processing and evaluation:
 
 ```bash
 bash scripts/run_pipeline.sh
@@ -112,7 +111,8 @@ MODE=all MODEL=gpt-4o BOOK_GLOB=book_1-book_50 bash scripts/run_pipeline.sh
 ```
 
 `MODE` accepts `e2e`, `cot`, `mosaic`, or `all`. Set `RUN_POSTPROCESS=0` or
-`RUN_EVALUATION=0` only when the corresponding stage should be skipped.
+`RUN_EVALUATION=0` only when the corresponding stage should be skipped. Model
+calls may incur provider charges.
 
 The shell wrappers are the recommended entry points on macOS and Linux. They
 keep the editable parameters in one block and call the corresponding Python
@@ -122,13 +122,9 @@ which `requirements.txt` was installed.
 
 ### Lower-level entry points
 
-- `scripts/inference/run_baselines.sh`: Full-book E2E or CoT
-- `scripts/inference/run_mosaic.sh`: complete MOSAIC pipeline
-- `scripts/inference/run_ablation.sh`: ablation configurations
-
 The editable block at the top of each file contains the defaults. The same
 settings can be overridden for one command without editing the script. The
-checked-in one-book selection is a low-cost smoke test.
+default selection processes `book_1.json` to limit API cost.
 
 | Task | Main settings to edit | Command |
 |---|---|---|
@@ -163,8 +159,9 @@ temperature 0.2, no explicit reasoning-effort or output-token limit, ordered
 page inputs, the same backbone across the three MOSAIC steps, and the final
 Step B/Step C information configuration described in the paper. The paper
 reports the arithmetic mean of two independent runs on the non-public
-200-book test set; the public subset is provided for inspection and code
-verification rather than exact reconstruction of the full reported scores.
+200-book test set. The released 50-book subset supports execution and
+evaluation of the complete pipeline but cannot reproduce the full reported
+scores exactly.
 
 The Python modules remain available as lower-level interfaces. Use
 `python -m scripts.inference.run_baselines --help` or
@@ -201,7 +198,9 @@ python -m scripts.evaluation.evaluate \
   --boundary_tol 0
 ```
 
-`scripts/evaluation/compare_results.py` provides the integrated comparison and length-analysis workflow used in the experiments. Its configuration block should be reviewed before execution.
+`scripts/evaluation/compare_results.py` provides the integrated comparison and
+length-analysis procedure used in the experiments. Set its configuration block
+before execution.
 
 ## Annotation interface
 
@@ -229,7 +228,7 @@ python scripts/check_environment.py --scope ocr
 bash tools/data_processing/run_ocr.sh
 ```
 
-Review the input and output paths in `run_ocr.sh` before execution.
+Set the input and output paths in `run_ocr.sh` before execution.
 Raw scans are not distributed in this repository; the OCR utility therefore
 runs on user-supplied images and writes to `outputs/ocr/` by default. On its
 first real OCR run, PaddleOCR downloads the required recognition models.
@@ -242,7 +241,8 @@ Additional research materials may be made available upon reasonable request, sub
 
 ## Citation
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). Please update the publication venue, DOI, and final bibliographic details after publication.
+Citation metadata is provided in [CITATION.cff](CITATION.cff). Publication
+venue, DOI, and final bibliographic details will be added after publication.
 
 ## License
 

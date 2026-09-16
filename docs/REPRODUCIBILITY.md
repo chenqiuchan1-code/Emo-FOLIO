@@ -1,7 +1,7 @@
 # Reproducibility guide
 
-This guide describes what a reviewer can run from a fresh clone and what is
-required beyond the repository.
+This guide describes how to install and run the released code and data, along
+with the resources required beyond the repository.
 
 ## 1. Install
 
@@ -28,7 +28,7 @@ python -m unittest discover -s tests -v
 
 These checks verify the installed runtime, the alignment of the 50 released
 books with their annotations and 862 page images, and a deterministic
-post-processing/evaluation smoke path.
+post-processing/evaluation test.
 
 Request construction can also be inspected without sending a model request:
 
@@ -64,8 +64,8 @@ access period reported in the paper.
 
 ## 4. Run one released book end to end
 
-The reviewer-oriented entry point selects `book_1.json` to limit cost and
-automatically runs MOSAIC, post-processing, and evaluation:
+The default entry point selects `book_1.json` to limit API cost and runs
+MOSAIC, post-processing, and evaluation:
 
 ```bash
 bash scripts/run_pipeline.sh
@@ -159,6 +159,5 @@ It is not, by itself, sufficient to reproduce the exact numbers in the paper:
 the reported experiments use a separate 200-book test set, whereas this
 repository releases 50 books. Exact multi-backbone reproduction additionally
 depends on access to the commercial model APIs or user-deployed endpoints used
-by each backbone. The public subset is intended for code verification,
-inspection of the annotation format, and reproducible evaluation on the
-released material.
+by each backbone. The public subset supports the complete released pipeline,
+inspection of the annotation format, and evaluation on the released material.
