@@ -1,0 +1,315 @@
+{
+  "book_id": "book_17",
+  "title": "我能打败大妖怪",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_17",
+  "pages": [
+    {
+      "page": 1,
+      "text": "“爸爸，我在故事书上看到了一个大妖怪。可是我一点儿也不怕它。布奇抱着波波熊，跑到爸爸跟前,“不过，波波有点儿害怕，它想和爸爸一起睡。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "“呵呵，波波可是个勇敢的小熊。爸爸拍着布奇的肩膀，笑咪咪地说，“波波像布奇一样勇敢，勇敢的孩子都能打败大妖怪。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "恐惧=",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 3,
+      "text": "“当然，波波像我一样勇敢，它一定能打败大妖怪。布奇说着，拉起波波熊，得意地爬上了床，“要是大妖怪来了，我的金箍棒还能打败它呢。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "爸爸关上灯出去了，布奇的房间变得黑乎乎的。黑乎乎的房间里,很快就响起了奇怪的声音·····\n\n布奇藏在被窝里，紧紧地搂着波波熊:“波波，不怕不怕，大妖怪很快就会走开的。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "可是，奇怪的声音越来越近,布奇越来越害怕了！就在这时侯，他想起了爸爸的话：勇敢的孩子都能打败大妖怪。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "恐惧+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "布奇鼓起勇气：“1、2、3、4、5!刚数到5，他就一把掀开被子，打开灯...",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "恐惧="
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 7,
+      "text": "一个长耳朵的大妖怪站在他面前，“吧嗒吧嗒”地吃着棒棒糖!\n\n“大妖怪，我才不怕你呢，我的金箍棒最厉害了布奇举起他的金箍，大声喊着。“我的魔法才最厉害呢！”大妖怪竖起耳朵，也大声地嘧起来。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "愤怒",
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧=",
+          "惊讶+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“我的金箍棒能变得长长的，你能吗？’布奇大声地问。”\n\n“哈哈，这可难不倒我。”大妖怪得意地拉起自己的耳朵来，终于，比布奇的金箍棒还长了。",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“我的金箍棒还能变得短短的，你也能吗？”布奇又问。\n\n“当然，我最厉害了，我什么都能。”大妖怪又急忙弯着腰，抱着脑袋拼命挤起来。它越挤越小，越挤越矮...终于，比布奇的金箍棒还短了。",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "惊讶+",
+          "好奇="
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 10,
+      "text": "看着矮矮胖胖、得意洋洋的大妖怪，布奇灵机一动，想到了一个好主意“现在，你还能变得更小，钻进我的储蓄罐里来吗？“我能我能，看我的！”大妖怪说着，急忙向储蓄罐里钻去·",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 11,
+      "text": "它钻呀钻，挤呀挤...终于把自己胖乎乎、圆溜溜的身子挤进去一半了。可是，储蓄罐太小，它再也挤不进去了，更糟糕的是，它再也出不来了！",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 12,
+      "text": "“我不玩了，不玩了，快把我拔出来吧...大妖怪急得快哭了。“可是，你是吓唬人的大妖怪，我才不帮你呢！布奇急忙摆摆手。",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 13,
+      "text": "“我不是吓唬人的大妖怪，我是可爱的花噜噜,大家都喜欢和我做朋友。花噜噜眼巴巴地望着布奇,“你也愿意和我做朋友吗?我的魔法可多了。”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 14,
+      "text": "和大妖怪交朋友?布奇吃了一惊，他可从来没有这样想过。可是，看到花噜噜可怜的样子，布奇又犹豫起来了:“要是⋯⋯我们做了朋友，你还会⋯⋯吓唬我吗？花噜噜急忙保证：“不会不会，我再也不吓唬你了，不信我们拉钩钩。”",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 15,
+      "text": "和花噜噜拉完钩钩，布奇放心了。他拿起心爱的储蓄罐，使劲一摔⋯⋯",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇="
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 16,
+      "text": "“砰、砰、砰” ，花噜噜像皮球一样弹到地上、门上、桌子上⋯⋯",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "惊讶+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 17,
+      "text": "“哈哈，真好玩儿！”花噜噜高兴地爬起来，“我还没玩够呢，我们再玩会儿吧。”",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 18,
+      "text": "玩累了，布奇和花噜噜很快就睡着了，睡得香香的。大妖怪真的一点儿也不可怕!",
+      "image": "18.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 4,
+      "end_page": 5,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 6,
+      "end_page": 9,
+      "intent": "逗趣"
+    },
+    {
+      "start_page": 10,
+      "end_page": 12,
+      "intent": "激励"
+    },
+    {
+      "start_page": 13,
+      "end_page": 17,
+      "intent": "逗趣"
+    },
+    {
+      "start_page": 18,
+      "end_page": 18,
+      "intent": "安抚"
+    }
+  ]
+}

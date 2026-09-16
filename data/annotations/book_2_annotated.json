@@ -1,0 +1,312 @@
+{
+  "book_id": "book_2",
+  "title": "新布谷鸟飞来了",
+  "book_type": "情节教育/自我控制",
+  "picture_dir": "../images/book_2",
+  "pages": [
+    {
+      "page": 1,
+      "text": "窗外有一棵大树，树上住着布谷鸟，小米天天看它。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 2,
+      "text": "早上，小米丢面包。布谷鸟唱：布谷，布谷。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 3,
+      "text": "今天早上，好安静。小米推开窗，发现布谷鸟躺在地上。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤",
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 4,
+      "text": "小米跑到树下：“布谷鸟，起床啦！”布谷鸟不动。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "小米轻轻地捧起布谷鸟，它不拍打翅膀，也不睁开眼睛。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "惊讶+",
+          "好奇-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "这时，妈妈走过来仔细看了看：“宝贝，布谷鸟太老了，它死了⋯⋯”“妈妈，什么是死？它昨天还是好好的呀，我不要布谷鸟死！”",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "恐惧",
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "恐惧+",
+          "惊讶-",
+          "好奇="
+        ],
+        "intent_tag": "表达悲悯"
+      }
+    },
+    {
+      "page": 7,
+      "text": "“宝贝，你看，树叶昨天还长在树上，可是今天，它们就落下来了。所有的生命都会老去，都会离开世界”",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "好奇="
+        ],
+        "intent_tag": "表达悲悯"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“妈妈，春天的时候，树叶还会长出来。要是我们把布谷鸟种在土里，它也会长出来吗？”“那我们试试吧！”",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 9,
+      "text": "妈妈找来一个漂亮的小盒子，把布谷鸟轻轻地放了进去。",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静+",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 10,
+      "text": "小米把盒子埋在树下，捡来几片黄叶。放在旁边。“布谷鸟，春天再见。”",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 11,
+      "text": "冬天来了，树叶都落下，鸟儿也飞走了。小米更想念布谷鸟。",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 12,
+      "text": "雪慢慢化了，春天来了，树叶绿了。早上，传来歌声：布谷！",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 13,
+      "text": "⋯⋯它不是小米的布谷鸟！小米找到妈妈问“树叶都长出来了，我的布谷鸟什么时候才能回来呢？”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "惊讶+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 14,
+      "text": "妈妈搂着小米，温柔地说：“宝贝，老布谷鸟再也不会回来了。春天里的每片树叶都是新的，布谷鸟也是新的。新布谷鸟会天天陪着你。”",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "悲伤-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 15,
+      "text": "小米抬起头，新布谷鸟正站在树枝上欢快地唱着歌：“布谷布谷，布谷布谷⋯⋯”",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 16,
+      "text": "第二天早上，新布谷鸟又飞来了，第三天，第四天，都是这样⋯⋯慢慢地，小米发现新布谷鸟和老布谷鸟一样，也能唱出动听的歌。",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 17,
+      "text": "小米喜欢上了新布谷鸟:“布谷鸟，布谷鸟，你也来尝尝我的面包末吧!",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 2,
+      "intent": "逗趣"
+    },
+    {
+      "start_page": 3,
+      "end_page": 5,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 6,
+      "end_page": 7,
+      "intent": "表达悲悯"
+    },
+    {
+      "start_page": 8,
+      "end_page": 10,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 11,
+      "end_page": 12,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 13,
+      "end_page": 15,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 16,
+      "end_page": 17,
+      "intent": "教育启发"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "book_id": "book_32",
+  "title": "小树",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_32",
+  "pages": [
+    {
+      "page": 1,
+      "text": "森林边住着一棵快乐的小树，她的朋友阿曼达每天过来跟她玩。小树抖动着叶子沙沙作响，给阿曼达唱歌，阿曼达则给小树讲去遥远的田野里探险的故事。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "一天，阿曼达和小树正在说话，忽然，天上乌云密布、狂风大作。阿曼达赶紧跑到森林深处躲了起来。\n\n可小树只是一棵树呀，她只能一直站在那里。狂风吹啊吹，吹了整晚，小树的树枝被甩得东倒西歪、前仰后合、上摇下晃。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 3,
+      "text": "第二天早晨，风停了。阿曼达跑回来看风暴过后的小树是不是还好。\n\n小树看起来变了个样子，很多树枝都被折断了聋拉下来，大部分的叶子都被吹掉了。阿曼达赶紧来帮忙。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "她叫来两个树医生，一位叫想象太太，一位叫治疗先生。治疗先生轻轻地敲了敲小树的根，又摸了摸她的树皮。他说：“哦，你的树皮在发热，但你的根很强壮。”",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "惊讶+",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 5,
+      "text": "接着，他爬上梯子检查小树的树枝。他仔细察看每根树枝，温柔地移动它们。想象太太把耳朵贴在小树的树干上听了听。她说：“嗯，你的心脏跳得很有力呢。”",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "惊讶=",
+          "平静="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“我们先给你喝点草药降降体温，”治疗先生说，“但要想真正治好，我们就要修理你折（shé）了的树枝，剪掉那些修不好的。我们还要用柔软的树叶把伤口包扎（za）起来，直到它们愈合。”",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "平静="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 7,
+      "text": "“我害怕。”小树轻声说。“没关系，我们会帮你的。”想象太太说。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“阿曼达，请你紧紧挨着小树，让她知道你在旁边陪着她。”想象太太说。“小树，请你在心里想象一片云，如果那片云代表了害怕的感觉，那么它是什么样子？注意它的颜色和形状哦。”\n\n小树专心地想，阿曼达则紧贴着她。过了一会儿，小树说：“我看到了。”",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“很好，”想象太太说，“现在想一想，如果感觉好一些的话，云朵又是什么颜色和形状呢？”小树想啊想，然后她说：“蓝色——像蓝天一样蓝，上面飘着软绵绵的白云，像一只只小动物。”\n\n“很好。现在想着这个画面，慢慢地深呼吸。然后想象这美丽的天空打着旋儿被吸进你的树干和树枝。这就是神奇快乐呼吸法。”",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 10,
+      "text": "等小树平静下来，治疗先生给她服用了一种特殊的药，让她很舒服，很想睡觉。\n\n想象太太告诉她要记得经常做神奇快乐呼吸法。阿曼达一直陪着她。\n\n接着，治疗先生很小心地把折（shé）了的树枝剪掉，用软软的白色叶子把伤口包好。",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 11,
+      "text": "接下来的几天几夜，阿曼达都在给小树讲故事。无论她醒着还是睡着了，阿曼达都跟她说话。因为，森林里的人都知道，当你睡着了，做着美梦，会有一些好的事情发生。",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 12,
+      "text": "但她还是很伤心。她想念失去的树枝，有时候，甚至以为那些树枝还长在她身上。“为什么我的树枝会断呢？”她问道，“难道是我做错了什么事？”\n\n“你是一棵非常好的小树，这不是你的错。”治疗先生说。想象太太摇摇头说：“小树，我也不知道为什么，这个问题我们至今都不知道答案。我只知道你有强壮的根和一颗勇敢的心，总有一天你会发现你的特别之处。”小树想，自己的特别之处到底是什么呢？",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "悲伤",
+          "惊讶",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 13,
+      "text": "又过了些日子，治疗先生说：“我们今天把叶子绷（beng）带拆掉吧，你可以看看你现在变成什么样子了。”“你会看到你的样子变了，”想象太太说，“但最重要的是你要勇敢接受你现在的样子。”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静+",
+          "好奇+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 14,
+      "text": "小树看到池塘里的倒影时，都认不出自己了。她哭了起来，因为她光顾着寻找那些失去的树枝。“小树，你看看池塘深处。”想象太太轻声说。小树很努力地往池塘深处看。她看到了自己健壮的树干、深深扎根于大地的树根和一颗美丽的心。",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“我的树枝还能长回来吗？小树问。想象太太说：“不能了。”\n\n“但是，小树，你看到你身上留下的树枝了吗？这些树枝很强壮，会长出漂亮的叶子，开出美丽的花。这些花将来会结出甜美的果子，到时候你可以跟森林里所有的朋友分享你的果子。”小树想象着将来幸福的画面，高兴得沙沙地摇着叶子。她想，这大概就是想象太太说的“你会发现你的特别之处”的意思吧？",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 16,
+      "text": "没过多久，森林里的每个人又高兴地听到小树的歌声和笑声了。尤其是阿曼达，她真为有小树这样勇敢又特别的朋友而感到骄傲。",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 4,
+      "end_page": 11,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 12,
+      "end_page": 16,
+      "intent": "教育启发"
+    }
+  ]
+}

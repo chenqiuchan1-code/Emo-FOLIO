@@ -1,0 +1,341 @@
+{
+  "book_id": "book_11",
+  "title": "妈妈是我的",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_11",
+  "pages": [
+    {
+      "page": 1,
+      "text": "布奇在外面玩了好一阵，高高兴兴回家了。可是，一进门，他就撅起小嘴巴！\n\n瞧， 家里来了小表妹丫丫，妈妈正抱着丫丫，把她举得高高的⋯⋯",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "愤怒",
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 2,
+      "text": "布奇不高兴了，他嚷嚷着：“妈妈，我肚肚饿。”\n“宝贝，桌上有蛋糕呢。”妈妈一边说着，一边抱起了丫丫，夸她城堡搭得好。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "愤怒+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 3,
+      "text": "“妈妈，我也要搭城堡。”布奇说完走到妈妈身边，使劲推开丫丫。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "悲伤=",
+          "愤怒+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 4,
+      "text": "丫丫摔倒在地上，哇哇大哭起来",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "恐惧",
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "愤怒="
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“妈妈才不会喜欢丫丫呢，妈妈是我的！”",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "恐惧="
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 6,
+      "text": "可是，妈妈在给丫丫讲波波熊的故事⋯⋯\n妈妈还笑呵呵地说 ：“丫丫真乖。”\n",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 7,
+      "text": "布奇生气了：“波波熊是我的！”他跑过去抢走波波熊。“布奇，不能抢丫丫的玩具！”妈妈责备地说。\n",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧=",
+          "愤怒+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“波波熊是我的！”布奇好委屈，气呼呼地跑了出去。",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "恐惧+",
+          "愤怒="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 9,
+      "text": "他跑到草地上，呜呜地哭了起来：“妈妈爱丫丫，妈妈不爱我了！”",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "恐惧",
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "恐惧+",
+          "愤怒-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 10,
+      "text": "“波波熊，我们去树房子吧。”\n\n布奇抱着波波熊，向树房子走去。",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "恐惧-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 11,
+      "text": "树房子里连一块饼干都没有。布奇的肚子越来越饿了，还“咕噜咕噜”地叫着。",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤",
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "恐惧+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 12,
+      "text": "慢慢地，太阳也下山了，“唧唧⋯⋯咯咯⋯⋯”周围响起了奇怪的声音。布奇吓得紧紧抱住波波熊：“要是妈妈在，该多好啊！",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "恐惧+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 13,
+      "text": "这时传来一个声音：“宝贝，你在哪里？“是妈妈吗？布奇竖起耳朵仔细听着。呀，真的是妈妈！\n\n“小哥哥，小哥哥！这是丫丫的声音。妈妈和丫丫越来越近了，可是，布奇闭上眼睛，抱着波波熊一动也不动。",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "恐惧-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 14,
+      "text": "“宝贝，终于找到你了，你要在树房子里睡觉吗？”妈妈吃惊地问。布奇低着头难过地说：“丫丫是妈妈的宝贝，我不是···”",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "恐惧-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“你永远是妈妈的好宝贝。妈妈温柔地抱起布奇。",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "悲伤",
+          "恐惧",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "恐惧-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 16,
+      "text": "布奇举起波波熊，开心地问妈妈：“波波熊也是妈妈的宝贝吗？“当然啦！”“妈妈，亲亲宝贝！",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 17,
+      "text": "“啵⋯⋯”妈妈亲了亲波波熊的小脸蛋。\n“啵⋯⋯”妈妈又亲了亲布奇的小脸蛋。",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 18,
+      "text": "“小哥哥⋯⋯蛋糕⋯⋯肚肚饿。” 丫丫说。\n布奇脸红了，他把波波熊放到丫丫的手里：“波波熊给丫丫玩，还可以和丫丫睡觉哦。”",
+      "image": "18.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静="
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 19,
+      "text": "妈妈一手抱着丫丫，一手拉着布奇，开开心心地回家了。",
+      "image": "19.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 7,
+      "intent": "信息传递"
+    },
+    {
+      "start_page": 8,
+      "end_page": 12,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 13,
+      "end_page": 17,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 18,
+      "end_page": 19,
+      "intent": "教育启发"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "book_id": "book_5",
+  "title": "送小星星回家",
+  "book_type": "情景教育类",
+  "picture_dir": "../images/book_5",
+  "pages": [
+    {
+      "page": 1,
+      "text": "布奇和小伙伴们在草地上数星星。“一颗，两颗，三颗…...\"突然，一道银色的亮光飞快地划了过来，像是给暗暗的天空抹了一笔亮亮的荧光粉。“流星!",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "流星在空中越飞越远，越飞越低。可是，“嗖———”的一声它竞然直直地掉了下来。小伙伴们连忙跑过去",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 3,
+      "text": "小星星静静地躺在草丛里，瘦瘦的，小小的，一闪又一闪，看起来可怜极了。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "惊讶=",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "“好漂亮啊！我要把它带回家去。“我最喜欢流星了，它应该是我的!“我也想要！”小米、阿迪和莫莫争了起来。\n\n“不行！”布奇连忙摆摆手“小星星迷路了，我们应该把它送回天上去。不然，月亮妈妈找不到它，一定会很伤心的。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“可是，小星星怎样才能回去呢？”布奇眨巴眨巴眼睛，很快就有了主意。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“大家跟我走，我们一起去送小星星回家吧！‘",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 7,
+      "text": "布奇带着小伙伴们走过山脚下。这里黑乎乎的，到处是风吹过树林的“沙沙”声十分吓人。\n\n“布奇，吃人的怪兽来了怎么办?莫莫胆怯地小声问道。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“别怕！要是怪兽来了，我们就骑到它的背上，拉住它的头发，让它把我们带到天上去。那样，小星星就可以回家啦！",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "惊讶-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 9,
+      "text": "接着，他又指了指天空，轻声地说：“瞧，月亮妈妈出来了，它也一定会保护我们的。",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 10,
+      "text": "布奇带着小伙伴们继续往山上走去。可是，他们遇到了一个分岔路口。“这么多条路，应该走哪一边呢？大家都有些糊涂了。",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [],
+        "prev_trend_marks": [],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 11,
+      "text": "布奇抬头看了看天空····",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 12,
+      "text": "“我们跟着月亮妈妈的方向，穿过右边的小路吧！小星星的家一定在那边。布奇开心地说。",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇-"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 13,
+      "text": "过了一会儿，布奇终于带着小伙伴们到达了山顶。这里的天空好低啊！天上布满了密密麻麻的小星星仿佛伸手就能摸到。小星星很快就能回家了。",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 14,
+      "text": "小伙伴们试了好多方法。可是，总是差一点儿。",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“怎么办呢？小星星怎样才能回家呢？小伙伴们全都很着急(\n\n布奇却神秘地笑了笑说：“别担心，我有办法!",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 16,
+      "text": "他捧着小星星来到河边，把它放进了银光闪烁的河水中小星星顺着哗啦啦的水流，缓缓地漂走了\n\n“小星星从这里出发，会一直漂进天上的银河。过一会儿，它就能回到家里，回到月亮妈妈的身边啦！",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 17,
+      "text": "“太好了，小星星终于回家喽！”",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 6,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 7,
+      "end_page": 9,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 10,
+      "end_page": 13,
+      "intent": "激励"
+    },
+    {
+      "start_page": 14,
+      "end_page": 17,
+      "intent": "逗趣"
+    }
+  ]
+}

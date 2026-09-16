@@ -1,0 +1,314 @@
+{
+  "book_id": "book_14",
+  "title": "没关系你不是故意的",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_14",
+  "pages": [
+    {
+      "page": 1,
+      "text": "今天玩点儿什么有趣的呢？三个小伙伴边走边磨。“去树林里搭房子吧。”小米想了想说。“钓鱼更好玩！”布奇着，昨天他刚买了一个新鱼竿。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "我们滑草吧，就像滑雪一样，可有趣了！阿迪说完就爬上了小草坡。“出发唤！”一转眼，阿迪就从小草坡上滑了下来，比小兔子还快。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 3,
+      "text": "小米和布奇等不及啦，他们也想玩一玩。小米伸开双手。她要像小鸟一样飞起来。布奇紧紧跟在小米后面，他还没想好做什么呢身子就不听话地溜了下去",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "砰 砰 砰” ！ ......\n布奇把小米撞倒了。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "惊讶+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“哇.…”小米哭了起来。布奇慌忙扶起小米：“小米，你摔疼了吗？\n\n可是，小米什么也不听，闭着眼睛，越哭越厉害。阿迪站在小米旁边，也不理布奇了。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "布奇好委屈：“我又不是故意的，为什么不理我？他丢下小伙伴，气呼呼地跑回了家。",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 7,
+      "text": "布奇藏在了自己的小衣橱里，越想越生气。想着想着。布奇又害怕起来：“小米会不会告诉妈妈呀？他们都会责备我⋯⋯”",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "愤怒+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“宝贝，你怎么啦？”妈妈走过来问。“我把小米撞倒了，”布奇哭了起来，“他们都不理我了。”“要是你向小米道歉，她会原谅你的。妈妈抱起布奇认真地说。“真的吗，妈妈？”",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“当然！”妈妈递给布奇一包香脆脆的饼干，“你愿意带给小米吗？”“嗯！”布奇把饼干装进小包里，高高兴兴地出门了。",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 10,
+      "text": "布奇跑到滑草的地方，小米和阿迪还在这儿玩呢。",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐-"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 11,
+      "text": "可是布奇不好意思走过去他藏在了树后面。这时候他听见小米说：“阿迪，我们来搭火车玩吧，一定很有趣哟！",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 12,
+      "text": "小米和阿迪抱在一起飞快地滑了下来····..啊，“火车”翻了，小米把阿迪撞倒了！",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 13,
+      "text": "“对不起，”小米扶起阿迪，不好意思地说，“我不是故意的。”“没关系，”阿迪笑着说。“其实，一点儿也不疼。”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 14,
+      "text": "小米想起自己刚刚还在生布奇的气：“布奇也不是故意的呀。”",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 15,
+      "text": "小米决定找布奇和好。可是，布奇在哪儿呢？小米真着急呀！",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 16,
+      "text": "瞧，布奇在那儿呢！小米看见树后面有一个熟悉的身影。",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 17,
+      "text": "小米急忙跑过去，拉起布奇的手：“布奇，我·我知道了，你不是故意的！”布奇的委屈一下全跑光了：“对不起，小米，我错了。你们还愿意和我一起玩吗？”“我们还是好朋友！”阿迪在一旁大声地说。",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 18,
+      "text": "三个小伙伴又开心地玩了起来。",
+      "image": "18.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐="
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 19,
+      "text": "玩累了，躺在草地上休息吧。谁的肚子在叫呢？“咕咕噜噜⋯⋯”\n谁的肚子在叫呢？\n“咕咕噜噜⋯⋯”\n“咕咕噜噜⋯⋯”\n",
+      "image": "19.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐-"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 20,
+      "text": "大家的肚子都饿了，布奇才想起妈妈给他的饼干。可是，打开一看，饼干全都成碎末了···不过没关系，三个小伙伴还是吃得有滋有味呢。",
+      "image": "20.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 4,
+      "end_page": 7,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 8,
+      "end_page": 9,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 10,
+      "end_page": 17,
+      "intent": "教育启发"
+    },
+    {
+      "start_page": 18,
+      "end_page": 20,
+      "intent": "逗趣"
+    }
+  ]
+}

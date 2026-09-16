@@ -1,0 +1,227 @@
+{
+  "book_id": "book_16",
+  "title": "糟了白云要掉下来了",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_16",
+  "pages": [
+    {
+      "page": 1,
+      "text": "今天天气真好，布奇正开心地踢着足球呢，忽然听到一阵轰隆隆的脚步声。原来是大象慌慌张张地跑来了：“糟了，白云要掉下来了！”",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 2,
+      "text": "“白云要掉下来了？”布奇大吃一惊。正在这时候，他又看见两只小兔子，一阵风似的跑来了：“糟了，糟了，白云要掉下来了!”",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 3,
+      "text": "接着，三只小蚂蚁也跌跌撞撞跑来了：“糟了，糟了，糟了，白云要掉下来了！”",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 4,
+      "text": "布奇急忙抬起头，“白云还好好地飘在天上呀，它没有掉下来。“可是，那片白云又厚又大，它很快就要掉下来了。小兔子说着，慌忙捂住自己的脑袋。“别担心，自云松松软软的，就算掉下来也不会砸疼脑袋。我们还可以做个大大的白云棉花糖呢。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "好奇="
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“白云棉花糖？！”小伙伴们惊讶得瞪大了眼睛，它们可从来没有吃过。“那一定是世界上最大最好吃的棉花糖。小兔子美滋滋地说道。“嗯，吃一口，还能像白云一样飞到天上！布奇得意地昂起头，“你们想跟我一起，飞到天上吗？",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“飞到天上，能去彩虹上滑滑梯吗？太象卷起了弯弯的鼻子。“飞到天上，能听月亮讲故事吗？小兔子伸直了长长的耳朵。“飞到天上，能跟星星一起跳舞吗？”小蚂蚁迫不及待地蹄起了脚。“当然，飞在天上能做好多好多有趣的事情，比你们知道的还要多！”布奇得意地说到。",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "逗趣"
+      }
+    },
+    {
+      "page": 7,
+      "text": "大象和小兔子、小蚂蚁们一听，高兴坏了，“就是嘛，白云掉下来也没什么可担心的，原来是件有趣的事儿。它们再也等不及了，跑到草地的最高处，使劲喊起来，“自云白云快掉下来吧。果真，几片大大的白云，从天边慢悠悠地飘来了。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "惊讶+",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 8,
+      "text": "可是，等了好久好久，他们也没看见白云噼里啪啦地掉下来⋯⋯",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "快乐-",
+          "惊讶-",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 9,
+      "text": "原来，白云不会从天上掉下来呀。小伙伴们失望极了，垂头丧气地坐在草地上。“哎，我不能去彩虹上滑滑梯了。”“哎，我不能听月亮讲故事了。”“哎，我也不能和星星跳舞了。”他们觉得，没有什么事儿比这更令人失望的了！",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 10,
+      "text": "“就算白云不掉下来，也没关系。”布奇大声地安慰着他们，“说不定，它还能帮我们做别的事情呢。大象甩了甩算子上的汗，急忙问道“白云能给我们带来凉快吗？天气热得可真难受。",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "悲伤",
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤-",
+          "愤怒-"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 11,
+      "text": "“当然能，我们现在就去找凉快吧。”布奇说着，带着他的小伙伴匆匆忙忙往前走去···不一会儿，他们真的找到凉快啦！“原来是白云遮住了头顶上的太阳。”大象惊讶地喊着。“白云真的能帮助我们。”小兔子也高兴地起来。",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐",
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 12,
+      "text": "“幸亏白云没有掉下来，要是掉下来让我们吃掉，那可就麻烦了。”",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 4,
+      "end_page": 6,
+      "intent": "逗趣"
+    },
+    {
+      "start_page": 7,
+      "end_page": 8,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 9,
+      "end_page": 12,
+      "intent": "教育启发"
+    }
+  ]
+}

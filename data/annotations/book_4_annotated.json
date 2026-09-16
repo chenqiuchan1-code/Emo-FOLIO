@@ -1,0 +1,293 @@
+{
+  "book_id": "book_4",
+  "title": "不再害怕独自睡觉",
+  "book_type": "情景教育类",
+  "picture_dir": "../images/book_4",
+  "pages": [
+    {
+      "page": 1,
+      "text": "天黑了，艾米丽该上床睡觉了。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 2,
+      "text": "她像一阵风一样跑进卧室，跳到床上钻进被窝里。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静=",
+          "好奇+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 3,
+      "text": "她使劲往上拽（zhuai）被子，一直拽到下巴那里，接着又把被子拉得平平整整的，一道褶皱（zhézhou）也没有。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静=",
+          "好奇="
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 4,
+      "text": "然后她慢慢地、小心翼翼地把两只胳膊伸进被窝里，只露出她小小的鼻子和大大的黑眼晴了。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静=",
+          "好奇="
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 5,
+      "text": "艾米丽盯着天花板，眼睛一眨不眨地等待着。不一会儿，就有好多好多的“假如”从她床底下冒了出来",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 6,
+      "text": "",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧=",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 7,
+      "text": "假如衣柜里突然钻出一头大犀（xT)牛，扯掉我的被子，害我着凉生病了，我该怎么办呢？”",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "恐惧+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“假如明天早晨醒来，我变成了一个公主，孤零零地待在一个遥远的国家，我该怎么办呢？”",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“假如趁我睡觉的时候，我的眉毛掉下来，拍拍翅膀飞走了，我该怎么办呢？”",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧=",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 10,
+      "text": "“假如我成了-个大歌星，一开始有很多很多钱，后来却变得身无分文，我该怎么办呢？”",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 11,
+      "text": "“假如床底下突然爬出来一只蜥蜴（xiyi），舔我的脸，我又该怎么办呢？”",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 12,
+      "text": "艾米丽看看四周。她看见小兔子安安静静地坐在角落里的摇摇椅上。\n\n艾米丽看见月亮台灯和往常一样，对她微笑。\n\n茶壶老老实实地待在粉色的小桌子上。\n\n她看见堆得高高的积木塔和她心爱的泰迪熊。\n\n她看见自己的芭蕾舞裙和芭蕾舞鞋从衣柜的门缝里露了出来。\n\n半开的窗户边，白色的窗帘在微风中轻轻摆动。",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇-"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 13,
+      "text": "“假如我伸伸懒腰，像被窝里的小兔子一样放轻松，会怎么样呢？”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静+",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 14,
+      "text": "“假如我去了一个最想去的地方，比如说海滩，在那里用沙子堆城堡，会怎么样呢？”\n\n?",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静=",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“假如我给泰迪熊盖好被子，并对它说‘明天见’，会怎么样呢？”",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静=",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 16,
+      "text": "“假如我慢慢吸气，感觉仿佛摸到了天花板，再慢慢呼气，然后落回地面，会怎么样呢？假如我现在就闭上眼睛睡觉，又会怎么样呢？”",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "平静=",
+          "好奇="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 17,
+      "text": "艾米丽闭上眼睛，甜甜地睡着了。",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 4,
+      "intent": "信息传递"
+    },
+    {
+      "start_page": 5,
+      "end_page": 11,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 12,
+      "end_page": 17,
+      "intent": "安抚"
+    }
+  ]
+}

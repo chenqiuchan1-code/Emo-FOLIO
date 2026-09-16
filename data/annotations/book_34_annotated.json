@@ -1,0 +1,258 @@
+{
+  "book_id": "book_34",
+  "title": "小奶牛的烦恼",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_34",
+  "pages": [
+    {
+      "page": 1,
+      "text": "这是艾美达，一只诺曼底小奶牛，她白色的皮肤上布满了黑色的斑点。她平静地生活在一个美丽的农场里，产的奶特别香，大家也都很喜欢她。可是，艾美达有一个烦恼：她不喜欢自己身上的黑色斑点",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 2,
+      "text": "美达\n\n这天早上，像平常一样，小奶牛怯生生地走出奶牛场。她遇到了好朋友小老鼠诺米。‘艾美达，你今天好吗？”小老鼠问她。“唉，还不是和平时一样。我长了一身的黑斑，可我一点儿也不喜欢！美露西真幸运，她身上就没有斑点，她长得多漂亮啊！”小奶牛叹了口气说。\n\n美露西是隔壁农场的利木赞牛。她的皮肤是漂亮的深棕色，谷物而且没有斑点！\n\n物",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 3,
+      "text": "小老鼠诺米看到她的朋友不开心，自己也高兴不起来。她想尽办法，想让小奶牛改变想法。可是没有用，艾美达怎么也开心不起来。她慢慢地朝牧场走去。现在，连诺米也开始难过了。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [
+          "悲伤=",
+          "愤怒="
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 4,
+      "text": "突然，艾美达开始在泥潭里打滚儿。那场面可壮观啦！小猪埃德蒙问她：“艾美达，你这是怎么了？你疯了吗？”艾美达浑身沾满了泥巴，回答道：‘我不喜欢我的黑斑，可我浑身上下到处都是。美露西的皮肤就只有一种颜色，多漂亮啊！\"",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "悲伤"
+        ],
+        "prev_trend_marks": [
+          "悲伤+",
+          "愤怒+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "是泥\n\n“我们猪才在泥潭里打滚儿呢，你可是奶牛啊！”小猪埃德蒙提醒她。“你现在看上去和美露西一样，皮肤是棕色的……但是泥巴滴得到处都是，多恶心啊！”小兔子奥古斯丁插嘴说。“你的奶头上全是泥巴，牛奶会变成什么味儿啊？”小绵羊让诺补充道。艾美达只好又一次难过地走开了。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "悲伤+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "路上，艾美达遇到了小猫芭莎。芭莎是个艺术家，整天只知道做白日梦。可一旦他拿起画笔来，总能画出奇妙无比的图画。农场里的小动物们都认识他。",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 7,
+      "text": "艾美达突然想到一个主意！芭莎，你能不能帮我个忙呀？”她问道“我想让你把我变漂亮，你能不能在我身上画些美丽的图案？求求你啦！芭莎觉得这个主意妙极了，他拿出了自己的画笔。\n\n茴香",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 8,
+      "text": "就在这时，农场里的小动物们又开始叽叽起来，他们觉得这个想法太荒唐了！“一只涂满颜料的奶牛！这太疯狂了！”鹅道。“我们又不是在马戏团！这是在农场，还是得注意形象！母鸡玛丽·拉鸟尔说。",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "愤怒"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“艾美达，你的斑点很漂亮，不需要再添加其他装饰了呀！”小猪埃德蒙坚持道。但我是黑白的，一点儿彩色也没有，太单调了！”艾美达反驳道。小绵羊让诺和小兔子奥古斯丁试着和她讲道理：那这么说，我们也有理由抱怨了！你看！我是纯黑色的！”让诺说。“而我是纯白色的！”奥古斯丁说。然后，他们异口同声地说：“你是黑白相间的，多幸运啊！\n\n埃德蒙",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 10,
+      "text": "艺术\n\n突然，小老鼠诺米气喘吁吁地跑了过来。整天，她都在帮艾美达寻找解决问题的办法。艾美达，快来，我知道谁能帮你了！”",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 11,
+      "text": "诺米把艾美达带到隔壁的牧场，去见美露西，那只利木赞母牛。“艾美达，你好呀，诺米跟我说你很苦恼。我想给你看样东西，看过之后，你就不会讨厌你的斑点啦，我敢保证！”美露西说。\n\n勒布朗牧场",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 12,
+      "text": "猫狐猴羽毛教授头部\n\n最强因为最快！所以有小个儿的有大个儿的有的个子小，腿却很长有胖的，有瘦的还有很多其他的膝盖\n\n身体灵活\n\n页\n\n美露西拿出一本大大的书，说：“你看！世界上有很多很多奇妙的动物都是黑白相间的，，像斑点狗啦，斑马啦，熊猫啦，还有狐猴！”艾美达被眼前神奇的发现迷住了！",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "好奇="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 13,
+      "text": "底奶\n\n美露西接着说：“你知道吗？世界上最美的动物都是长斑点的。你真是太幸运了！我都想有斑点呢！你看长颈鹿，多让人羡慕啊！还有猎豹、美洲豹、花豹和！他们都长着漂亮的斑点！”\n\n有斑\n\n的\n\n豹美",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 14,
+      "text": "艾美达由衷地感谢美露西，她让自己发现世界上还有这么神奇的事情艾美达开始重新看待自己身上的斑点了！或许，她真的像大家说的那样，本来就很美呢?\n\n这一次，她愉快地回到了自己的牧场。",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 15,
+      "text": "从此以后，艾美达每天都笑嘻嘻的，再也不烦恼了。“我很喜欢自己现在的样子，我愿意和朋友们一起，享受生活！",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静="
+        ],
+        "intent_tag": "引发好奇"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "信息传递"
+    },
+    {
+      "start_page": 4,
+      "end_page": 5,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 6,
+      "end_page": 8,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 9,
+      "end_page": 11,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 12,
+      "end_page": 15,
+      "intent": "引发好奇"
+    }
+  ]
+}

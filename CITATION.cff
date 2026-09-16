@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper."
+title: "Connecting Emotion Dynamics and Narrative Organization in Picture Books"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Qiuchan
+  - family-names: Xie
+    given-names: Weikang
+  - family-names: Han
+    given-names: Menglu
+  - family-names: Yang
+    given-names: Honglong
+  - family-names: Leng
+    given-names: Ziyi
+  - family-names: Cai
+    given-names: Xinyuan
+repository-code: "https://github.com/chenqiuchan1-code/Emo-FOLIO"
+date-released: 2026-09-16
+license: MIT

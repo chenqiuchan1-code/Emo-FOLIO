@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+results/
+outputs/
+inputs/
+STOP_ALL
+STOP_ALL_REASON.txt
+.circuit_state.json
+*.log

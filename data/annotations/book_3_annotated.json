@@ -1,0 +1,363 @@
+{
+  "book_id": "book_3",
+  "title": "我长大了",
+  "book_type": "情节教育/自我控制",
+  "picture_dir": "../images/book_3",
+  "pages": [
+    {
+      "page": 1,
+      "text": "“爸爸快醒醒!我是不是已经长大了,可以捉鱼了?”“没错,宝贝儿。爸爸今天就教你怎么捉鱼。”",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "“我们得先弄点儿吃的。我给你摘果子吧。”“我摘我摘,爸爸!”“宝贝儿,当心!”",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "好奇-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 3,
+      "text": "“宝贝儿,一头大熊是会用眼睛去观察的。带刺的灌木丛和刺猬一定是有区别的。”",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤",
+          "惊讶",
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "好奇="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 4,
+      "text": "“我知道一个特别棒的地方，就在山那边有一片湖,湖里有好多鱼。\"“我爬山很拿手的!我要走在前面!”“别动,宝贝儿!”",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“宝贝儿,一头大熊在行动之前要先学会思考最好还是离老鹰远一点儿!”",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“这里有一条通向山里的地道，我领路怎么样?”“我在前,我在前,爸爸!”“好吧,宝贝儿,你在前面走。”",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 7,
+      "text": "“爸爸,小心!他们会扑到我们脸上!”“宝贝儿,一头大熊要学会冷静地面对一切，在黑暗中也要找到路。”",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "惊讶",
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "好奇-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 8,
+      "text": "“快看我!爸爸!”“宝贝儿!危险!”",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "好奇="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“宝贝儿,一头大熊可没小松鼠那么灵巧。我们得找其他的路走过去。”",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧+",
+          "好奇="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 10,
+      "text": "“爸爸我累了。咱们坐在这里休息一会儿吧。”“哦,宝贝儿,这可不行。你没听见远处有踩草丛的啪啪声吗?",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 11,
+      "text": "“一头大熊要会用耳朵去听。你听到有一群野牛跑过来了吗?”",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "恐惧+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 12,
+      "text": "“爸爸,瞧,我藏得不错吧。”“太晚了,宝贝儿,那头豹子已经发现我们了。我得把他赶跑。”“我来,爸爸,我也能用特别大的声音把他赶跑。”“好,喊出你最大的声音!”",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧-"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 13,
+      "text": "“鸣……”小熊吼起来。“呜……嗷…\"大熊吼起来。“干得漂亮,宝贝儿。”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 14,
+      "text": "“爸爸快看!蜂窝!我们能饱餐一顿啦!“宝贝儿,闻闻看!”",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“宝贝儿,一头大熊要学会用鼻子去闻。那可不是蜜蜂的窝,是黄蜂的。他们现在发火啦。”",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤",
+          "惊讶"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 16,
+      "text": "“宝贝儿,咱们到了。就在这里捉鱼吧,爸爸先给你捉一条。“我捉我捉。我已经是大熊了!”",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 17,
+      "text": "“这里有条鱼!我去把它捉回来!”",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "好奇+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 18,
+      "text": "熊爸爸在想,他要不要去帮助小熊呢?“爸爸,我该怎么做?\"",
+      "image": "18.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "悲伤",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇="
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 19,
+      "text": "“宝贝儿,游过来!一头大熊要学会用爪子游泳。”",
+      "image": "19.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "恐惧-",
+          "好奇="
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 20,
+      "text": "“看呀,爸爸,我会游泳了我自己捉到鱼了!”",
+      "image": "20.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 21,
+      "text": "“我长大了,对吧,爸爸?”\n“嗯,我的宝贝儿真是长大了!”",
+      "image": "21.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 1,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 2,
+      "end_page": 11,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 12,
+      "end_page": 13,
+      "intent": "激励"
+    },
+    {
+      "start_page": 14,
+      "end_page": 15,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 16,
+      "end_page": 20,
+      "intent": "教育启发"
+    },
+    {
+      "start_page": 21,
+      "end_page": 21,
+      "intent": "安抚"
+    }
+  ]
+}

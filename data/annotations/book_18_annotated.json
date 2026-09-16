@@ -1,0 +1,219 @@
+{
+  "book_id": "book_18",
+  "title": "越来越大的魔力扇",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_18",
+  "pages": [
+    {
+      "page": 1,
+      "text": "风娃娃有一把神奇的魔力扇，只要轻轻一扇，就能让大风车骨碌碌地转，只要轻轻一扇，就能让小帆船呼呼呼地冲向前。这可把阿迪美慕坏了，他想：要是我也有一把魔力扇，那该多好啊。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 2,
+      "text": "“把风娃娃的魔力扇借来，就行了呀！想到这儿，阿迪飞快地跑到了风娃娃家。可是，风娃娃听了直摇头：“不行不行，魔力扇的魔力太大，可不能随便玩它。”阿迪慌忙说道：“别担心，我会特别小心地，轻轻地扇动它。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 3,
+      "text": "风娃娃想了想，犹犹豫豫地从口袋里掏出魔力扇：“那你要记住了，可不能用力扇，不然魔力扇会变得越来越大，风也会越来越大，这会给大家带来麻烦的。”“嗯，记住了，记住了。”阿迪拿着魔力扇，高高兴兴地去找他的小伙伴了。",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "远远地，阿迪就看见三只蜗牛在散步，他大声地打着招呼：“嘿，你们知道吗?我的本领可大了，我能把爬山虎的叶子都扇下来。”",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 5,
+      "text": "阿迪小心翼翼地扇了一下，爬山虎的叶子果然纷纷往下落。“要是把爬山虎扇得左摇右晃，它们一定会佩服我。刚想到这儿，阿迪就忍不住握紧扇子，用力一扇。一阵大风吹来，爬山虎的叶子像波浪一样翻滚起来。“别扇了，别扇了，我们都快掉下来了！”小蜗牛们慌忙喊道。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "恐惧",
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“嘿，你们知道吗？我的本领可大了，我能把篮子里的青草都扇起来。看到小兔子们在割青草，阿迪高高地举起魔力扇，更用力地向它们扇去·\n\n阿迪得意洋洋地停了下来。这时候，奇怪的事情发生了，魔力扇变大了!“变大了也没关系，现在我的本领就更大了。阿迪一点儿也不担心。他扛起魔力扇，乐呵呵地向小兔子家跑去。",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "惊讶+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 7,
+      "text": "“呼呼呼”，地上刮起一阵更大的风，把青草都刮到了半空中。“别扇了，别扇了，我们都快被刮到天上去了！一只小兔子抓住篮子，生气地喊道。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "快乐",
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "快乐-",
+          "惊讶+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 8,
+      "text": "可是，看着魔力扇越变越大，扇出的风也越变越大，阿迪觉得太好玩了，他才不想停下来呢！看见大象在果园里摘苹果,阿迪决定让大象也看看他的厉害。",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 9,
+      "text": "“呜呜呜呜”，天空中刮起了可怕的、从来没看见过的大风！树上的红苹果辟里啪啦地往下落。“别扇了，别扇了，我都快被刮到树上去了！”大象摇摇晃晃，紧紧地用鼻子勾住苹果树。就在这时候，糟糕的事情发生了，阿迪不见了！",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "恐惧",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 10,
+      "text": "“风娃娃，快救救我吧！原来，阿迪被大风刮到了树梢上!风娃娃急匆匆地赶来，打开他的风口袋，把可怕的大风全装了进去。阿迪得救了！",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 11,
+      "text": "阿迪捡起巨大的魔力扇，羞愧极了：“风娃娃，我，我不该忘了自己说的话，让魔力扇越变越大。它还能变回原来的样子吗？“要是你轻轻地扇动魔力扇，帮助大家，它就能变回原来的样子。”风娃娃安慰着他。“可是，贪玩的阿迪能做到吗？”小伙伴们真担心！",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "恐惧"
+        ],
+        "prev_trend_marks": [
+          "恐惧-"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 12,
+      "text": "咦，小伙伴们没有听到“呜呜呜”的风声，抬头一看，阿迪正轻轻地扇着魔力扇呢。白绒绒的蒲公英种子轻轻地飘了起来，它们正想乘着微风，飞到很远的地方去呢。“阿迪真的做到了！”大象惊讶得睁大了眼睛。“嗯，他终于明白该控制自己了。”兔子们高兴地晃起了耳朵。",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 13,
+      "text": "阿迪当然知道该控制自己了。瞧，越变越大的魔力扇，又变回来了！",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静="
+        ],
+        "intent_tag": "教育启发"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 3,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 4,
+      "end_page": 10,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 11,
+      "end_page": 13,
+      "intent": "教育启发"
+    }
+  ]
+}

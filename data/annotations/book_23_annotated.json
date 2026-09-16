@@ -1,0 +1,308 @@
+{
+  "book_id": "book_23",
+  "title": "最好的朋友",
+  "book_type": "情感心理类",
+  "picture_dir": "../images/book_23",
+  "pages": [
+    {
+      "page": 1,
+      "text": "火鸡图图想要有个最好的朋友。\n\n我可真是受欢迎。星期五和波波一起午夜漫步\n\n星期三和卡西做奶酪。\n\n星期四和奥莫开派对。\n\n尽管她有好多好多玩伴，还有跟奶牛卡西、猫头鹰奥莫、谷仓猫斑斑、蝙蝠波波订下的各种各样的游玩计划。",
+      "image": "1.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 2,
+      "text": "所有人都觉得图图特别好，是最棒的，但这没有用。没有最好的朋友，她觉得很孤单。",
+      "image": "2.png",
+      "labels": {
+        "primary_emotion": "悲伤",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "信息传递"
+      }
+    },
+    {
+      "page": 3,
+      "text": "然而，就在一个早晨，事情发生了变化。那天，图图正在池塘旁边找浆果吃。\n\n突然，从一只奇怪鸟儿的奇怪嘴里传来一阵奇怪的叽叽呱呱的声音：“这些浆果看上去好吃极了！",
+      "image": "3.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "惊讶",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 4,
+      "text": "“你是谁？”图图问。“大家都叫我小小，”那只鸟回答，“因为我个子非常小。和你一样，我也是火鸡。和你一样，我也觉得孤单。”\n\n“谁说我孤单了？我有好多好多朋友。她俩目不转睛地盯着对方看。",
+      "image": "4.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-",
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 5,
+      "text": "“你不是一只火鸡。”图图说。\n\n“我是，我就是！我和你一样，也是一只火鸡。”\n\n图图皱起了眉头。\n\n小小站在那里，点了点头。",
+      "image": "5.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "愤怒",
+          "惊讶"
+        ],
+        "prev_trend_marks": [
+          "好奇+"
+        ],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 6,
+      "text": "“明天我们能再见面吗？”小小说，“我想给你带些栗子，我本来准备把它们留到我生日那天的。”\n\n“我确实挺喜欢栗子的。”图图说，“那好，明天见！”“明天见，图图。”小小说。图图招了招手，跑开了。",
+      "image": "6.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "引发好奇"
+      }
+    },
+    {
+      "page": 7,
+      "text": "那天晚上，图图睡得又香又甜，她的心里仿佛乐开了花。她隐隐约约地知道，自己已经找到了最好的朋友。",
+      "image": "7.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "平静="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 8,
+      "text": "整个夏天，图图和小小都在池塘边碰面，一起吃浆果和栗子。\n\n在山坡上睡长长的午觉。\n\n讲一些可笑的故事。",
+      "image": "8.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静="
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 9,
+      "text": "有时候一句话也不说，有时又无话不谈。",
+      "image": "9.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "平静+"
+        ],
+        "intent_tag": "安抚"
+      }
+    },
+    {
+      "page": 10,
+      "text": "图图不在一点儿都不好玩\n\n可是，在农场里，动物们却很好奇为什么整天都见不到图图的影子，不明白她为什么不再和他们一起玩了。\n\n听说她交了个新朋友。\n\n我们好想",
+      "image": "10.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐-",
+          "平静="
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 11,
+      "text": "他们一块儿走向池塘。图图和小小正仰面躺在地上，四脚朝天睡大觉呢！\n\n动物们冲她们大笑起来。图图醒了“图图，接着和你的新朋友玩啊！我们才不想你呢，我们根本不在乎！”",
+      "image": "11.png",
+      "labels": {
+        "primary_emotion": "愤怒",
+        "secondary_emotions": [
+          "惊讶",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "制造紧张"
+      }
+    },
+    {
+      "page": 12,
+      "text": "图图有点儿难以接受。“对不起，图图，”小小说，“你还是马上就回家吧！”“我不能离开你，小小。你是我最好的朋友！你知道这意味着什么。“当你受伤的时候，最好的朋友会陪你一起哭。当你难过的时候，最好的朋友会给你拥抱。当你缺少勇气的时候，最好的朋友会握紧你的手。最好的朋友会告诉每个人你有多么特别。当你需要的时候，最好的朋友总在你身旁。”",
+      "image": "12.png",
+      "labels": {
+        "primary_emotion": "惊讶",
+        "secondary_emotions": [
+          "悲伤",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "惊讶=",
+          "平静="
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 13,
+      "text": "“我们是最好的朋友！”小小说。“可是，你难道不想念那些朋友吗？”“我想念他们，确实想念。”图图说。“也许我们该去和你的朋友们谈一谈。”小小说。“要是他们再取笑我们怎么办呢？”图图显得很害怕。\n\n“你知道该怎么说。”小小回答。“你是他们的好朋友。我相信你。”",
+      "image": "13.png",
+      "labels": {
+        "primary_emotion": "好奇",
+        "secondary_emotions": [
+          "快乐",
+          "恐惧"
+        ],
+        "prev_trend_marks": [],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 14,
+      "text": "于是，图图和小小一起回到农场所有的动物都转过身去，故意不看她们\n\n“嗨，大家好！”图图说，“我回来了。“我想给你们介绍我的新朋友小小。她又风趣，又可爱，而且她的心眼儿特别好。”\n\n我听不见。\n\n你听见什么声音了吗？",
+      "image": "14.png",
+      "labels": {
+        "primary_emotion": "平静",
+        "secondary_emotions": [
+          "快乐",
+          "惊讶",
+          "好奇"
+        ],
+        "prev_trend_marks": [
+          "快乐=",
+          "好奇+"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 15,
+      "text": "“这关我们什么事？”谷仓猫斑斑大声喊。‘整个夏天，你对我们不理不踩。你把我们忘在脑后\n\n‘对不起，”图图说，“我并不想这样这是我第一次有最好的朋友。”",
+      "image": "15.png",
+      "labels": {
+        "primary_emotion": "恐惧",
+        "secondary_emotions": [
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静-"
+        ],
+        "intent_tag": "教育启发"
+      }
+    },
+    {
+      "page": 16,
+      "text": "然后，小小走上前来。“我知道这样做不对，让你们觉得被忽视。但是图图确实很爱你们。她给我讲了很多很多关于你们每一个人的故事。比如说吧，斑斑，有一天你跳进了油漆桶，等你爬出来的时候，从头到尾都变成了红色！后来你在草地上滚来滚去，把绿草都染红了！”",
+      "image": "16.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "平静+"
+        ],
+        "intent_tag": "激励"
+      }
+    },
+    {
+      "page": 17,
+      "text": "“我们记得那回事！那真是太好笑了！关于我们，图图还告诉了你别的什么事？他们都围了过来，一边听一边笑。他们忘记了受到的伤害。他们明白了图图还爱他们。他们还是她的好朋友。很快，天黑了，小小要回家了。“明天再来！”奶牛卡西说。“我们的家就是你的家！”蝙蝠波波说“永远都是好朋友！”山羊憨憨说。“图图是对的。”谷仓猫斑斑说。\n\n“她说得没错。她找到你，就是找到一个真正的最好的朋友。”",
+      "image": "17.png",
+      "labels": {
+        "primary_emotion": "快乐",
+        "secondary_emotions": [
+          "惊讶",
+          "平静"
+        ],
+        "prev_trend_marks": [
+          "快乐+",
+          "惊讶=",
+          "平静+"
+        ],
+        "intent_tag": "激励"
+      }
+    }
+  ],
+  "intent_segments": [
+    {
+      "start_page": 1,
+      "end_page": 2,
+      "intent": "信息传递"
+    },
+    {
+      "start_page": 3,
+      "end_page": 6,
+      "intent": "引发好奇"
+    },
+    {
+      "start_page": 7,
+      "end_page": 9,
+      "intent": "安抚"
+    },
+    {
+      "start_page": 10,
+      "end_page": 11,
+      "intent": "制造紧张"
+    },
+    {
+      "start_page": 12,
+      "end_page": 15,
+      "intent": "教育启发"
+    },
+    {
+      "start_page": 16,
+      "end_page": 17,
+      "intent": "激励"
+    }
+  ]
+}

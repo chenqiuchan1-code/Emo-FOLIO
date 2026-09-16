@@ -1,0 +1,27 @@
+[
+  {
+    "gold_file": "book_1_annotated.json",
+    "pred_file": "book_1_WHOLE_normalized.json",
+    "primary_acc": 0.7,
+    "ml_micro_prec": 0.6666666666666666,
+    "ml_micro_rec": 0.7666666666666667,
+    "ml_micro_f1": 0.7131782945736433,
+    "trend_gold_micro_acc": 0.6,
+    "segments_micro_f1": 0.5454545454545454,
+    "boundary_f1": 0.7272727272727272,
+    "intent_acc": 0.55
+  },
+  {
+    "gold_file": "__AVERAGE__",
+    "pred_file": "__AVERAGE__",
+    "books_count": 1,
+    "primary_acc": 0.7,
+    "ml_micro_prec": 0.6666666666666666,
+    "ml_micro_rec": 0.7666666666666667,
+    "ml_micro_f1": 0.7131782945736433,
+    "trend_gold_micro_acc": 0.6,
+    "segments_micro_f1": 0.5454545454545454,
+    "boundary_f1": 0.7272727272727272,
+    "intent_acc": 0.55
+  }
+]
