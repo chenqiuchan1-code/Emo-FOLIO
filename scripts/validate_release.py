@@ -20,7 +20,7 @@ def _load(path: Path) -> dict:
     return obj
 
 
-def validate(repo_root: Path, first_id: int = 1, last_id: int = 50) -> list[str]:
+def validate(repo_root: Path, first_id: int = 1, last_id: int = 34) -> list[str]:
     books_dir = repo_root / "data" / "books"
     annotations_dir = repo_root / "data" / "annotations"
     images_dir = repo_root / "data" / "images"
@@ -142,7 +142,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=default_root)
     parser.add_argument("--first-id", type=int, default=1)
-    parser.add_argument("--last-id", type=int, default=50)
+    parser.add_argument("--last-id", type=int, default=34)
     args = parser.parse_args()
 
     errors = validate(args.repo_root.resolve(), args.first_id, args.last_id)

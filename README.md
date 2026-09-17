@@ -7,7 +7,7 @@ This repository contains the public data subset and implementation accompanying 
 - Full-book E2E and CoT baselines;
 - **MOSAIC** (*Multilevel Organization of Story-Aware Information for Cross-level Reasoning*);
 - post-processing, evaluation, ablation, and length-analysis scripts; and
-- a public subset of 50 picture books with aligned source records, annotations, and page images.
+- a public subset of 34 picture books with aligned source records, annotations, and page images.
 
 MOSAIC is a structured inference framework that organizes reusable story-aware information and connects book-, stage-, and page-level reasoning through controlled, structure-guided information flow.
 
@@ -19,7 +19,7 @@ MOSAIC is a structured inference framework that organizes reusable story-aware i
 ├── data/
 │   ├── books/               # corrected page text and image references
 │   ├── annotations/         # human annotations
-│   └── images/              # text-free page images (books 1-50)
+│   └── images/              # text-free page images (books 1-34)
 ├── mosaic/                  # Steps A, B, and C of MOSAIC
 ├── examples/                # real one-book predictions and evaluation outputs
 ├── scripts/
@@ -62,7 +62,7 @@ python scripts/validate_release.py
 python -m unittest discover -s tests -v
 ```
 
-These commands verify the installed runtime, the alignment of books 1-50 with
+These commands verify the installed runtime, the alignment of books 1-34 with
 their annotation files and page images, and the post-processing/evaluation
 pipeline. For detailed setup, execution, and reproducibility limits, see
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
@@ -107,7 +107,7 @@ without editing source files:
 ```bash
 MODE=e2e MODEL=gpt-4o BOOK_GLOB=book_1.json bash scripts/run_pipeline.sh
 MODE=cot MODEL=gpt-4o BOOK_GLOB=book_1.json bash scripts/run_pipeline.sh
-MODE=all MODEL=gpt-4o BOOK_GLOB=book_1-book_50 bash scripts/run_pipeline.sh
+MODE=all MODEL=gpt-4o BOOK_GLOB=book_1-book_34 bash scripts/run_pipeline.sh
 ```
 
 `MODE` accepts `e2e`, `cot`, `mosaic`, or `all`. Set `RUN_POSTPROCESS=0` or
@@ -137,8 +137,8 @@ default selection processes `book_1.json` to limit API cost.
 # CoT without editing the shell file
 USE_COT=1 bash scripts/inference/run_baselines.sh
 
-# Run the released 50-book subset
-BOOK_GLOB=book_1-book_50 bash scripts/inference/run_mosaic.sh
+# Run the released 34-book subset
+BOOK_GLOB=book_1-book_34 bash scripts/inference/run_mosaic.sh
 ```
 
 Baseline outputs are written under `results/baselines/<model>/`. MOSAIC
@@ -226,14 +226,15 @@ OCR run, PaddleOCR downloads the required recognition models.
 
 The full Emo-FOLIO benchmark contains 234 picture books. The paper reports
 results on a separate 200-book test set, while this repository contains a
-50-book public subset with corrected page text, text-free page images, and
+34-book public subset with corrected page text, text-free page images, and
 human annotations. The subset supports the complete pipeline but does not
 reproduce the paper's full-test scores exactly. The code license does **not**
 grant rights to third-party picture-book content. See
 [DATA_NOTICE.md](DATA_NOTICE.md) before redistributing or reusing any data
 files.
 
-Additional research materials may be made available upon reasonable request, subject to copyright and other applicable restrictions.
+Additional research materials may be made available for scholarly use where
+the authors are authorized to share them.
 
 ## Citation
 

@@ -95,7 +95,7 @@ def save_json(d: Dict[str, Any], p: Path) -> None:
 def get_annotated_book_stems(out_dir: Path) -> set:
     """
     从 books_annotated 中收集已经标注过的书名 stem。
-    例如：book_50_annotated.json -> book_50
+    例如：book_34_annotated.json -> book_34
     """
     stems = set()
     if not out_dir.exists():
@@ -109,8 +109,8 @@ def get_annotated_book_stems(out_dir: Path) -> set:
 def format_book_option(book_name: str, annotated_stems: set) -> str:
     """
     仅用于下拉框显示：
-    - 未标注：book_50.json
-    - 已标注：book_50.json  ✅已标注
+    - 未标注：book_34.json
+    - 已标注：book_34.json  ✅已标注
     """
     stem = Path(book_name).stem
     if stem in annotated_stems:
@@ -120,7 +120,7 @@ def format_book_option(book_name: str, annotated_stems: set) -> str:
 def natural_sort_key(s: str):
     """
     自然排序：
-    book_2.json < book_10.json < book_50.json
+    book_2.json < book_10.json < book_34.json
     """
     return [int(part) if part.isdigit() else part.lower()
             for part in re.split(r"(\d+)", s)]

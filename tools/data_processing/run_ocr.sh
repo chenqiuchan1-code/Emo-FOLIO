@@ -16,7 +16,7 @@ BOOKS_ROOT="./outputs/ocr/books"         # OCR-derived book JSON files
 
 # Optional selectors; leave empty to process all discovered books.
 TYPES=""                                 # Comma-separated category names.
-BOOKS="1..50"                            # Example: book_8, 8..12, or a title keyword.
+BOOKS="1..34"                            # Example: book_8, 8..12, or a title keyword.
 
 # Inspection controls (true/false)
 DO_LIST=false                            # List selected books without processing.

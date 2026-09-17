@@ -74,9 +74,9 @@ WINDOW_SIZE_STEPC=4
 #   --book-glob 'book_4.json'
 #   --book-glob 'book_4'
 # Range:
-#   --book-glob 'book_1-book_50'
+#   --book-glob 'book_1-book_34'
 # Explicit list (comma- or space-separated):
-#   --book-glob 'book_1,book_6,book_50'
+#   --book-glob 'book_1,book_6,book_34'
 # The default is a one-book smoke test.
 BOOKS_DIR="./data/books"
 BOOK_GLOB='book_1'

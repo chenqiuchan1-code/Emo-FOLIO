@@ -1,7 +1,7 @@
 # Public data subset
 
-This directory contains books 1-50 from the public Emo-FOLIO subset: 50 books
-and 862 aligned image-text pages.
+This directory contains books 1-34 from the public Emo-FOLIO subset: 34 books
+and 603 aligned image-text pages.
 
 ## `books/`
 

@@ -10,7 +10,7 @@ analyze_book_lengths.py
 
 运行示例：
 python -m scripts.evaluation.analyze_book_lengths
-python -m scripts.evaluation.analyze_book_lengths --book-glob 'book_1-book_50'
+python -m scripts.evaluation.analyze_book_lengths --book-glob 'book_1-book_34'
 """
 
 import argparse
@@ -39,7 +39,7 @@ def _expand_specs(books_dir: Path, spec: str):
     if any(ch in spec for ch in "*?[]"):
         return sorted(books_dir.glob(spec))
 
-    # 区间：book_1-book_50
+    # 区间：book_1-book_34
     if "-" in spec:
         left, right = spec.rsplit("-", 1)
         left = left.strip()
@@ -234,7 +234,7 @@ def main():
     repo_root = Path(__file__).resolve().parents[2]
     ap = argparse.ArgumentParser()
     ap.add_argument("--books-dir", default=str(repo_root / "data" / "books"), help="绘本 JSON 所在目录")
-    ap.add_argument("--book-glob", default="book_*.json", help="书目范围，如 book_1-book_50 / book_*.json")
+    ap.add_argument("--book-glob", default="book_*.json", help="书目范围，如 book_1-book_34 / book_*.json")
     ap.add_argument("--out-dir", default=str(repo_root / "results" / "book_length_analysis"), help="输出目录")
     args = ap.parse_args()
 

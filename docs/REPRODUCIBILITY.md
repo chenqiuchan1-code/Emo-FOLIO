@@ -26,8 +26,8 @@ python scripts/validate_release.py
 python -m unittest discover -s tests -v
 ```
 
-These checks verify the installed runtime, the alignment of the 50 released
-books with their annotations and 862 page images, and a deterministic
+These checks verify the installed runtime, the alignment of the 34 released
+books with their annotations and 603 page images, and a deterministic
 post-processing/evaluation test.
 
 Request construction can also be inspected without sending a model request:
@@ -105,7 +105,7 @@ python -m scripts.evaluation.evaluate \
 ```
 
 To process all released books, prefix either inference command with
-`BOOK_GLOB=book_1-book_50`. Model calls may incur substantial provider costs.
+`BOOK_GLOB=book_1-book_34`. Model calls may incur substantial provider costs.
 
 ## 5. Ablations
 
@@ -151,14 +151,14 @@ PaddleOCR downloads its recognition models on the first real OCR run.
 
 ## Reproducibility boundary
 
-The repository is sufficient to run the released 50-book subset through the
+The repository is sufficient to run the released 34-book subset through the
 baseline, MOSAIC, post-processing, and evaluation code when the user supplies
 access to a supported model service. It also supports the released annotation
 interface and preprocessing utilities under their documented dependencies.
 
 It is not, by itself, sufficient to reproduce the exact numbers in the paper:
 the reported experiments use a separate 200-book test set, whereas this
-repository releases 50 books. Exact multi-backbone reproduction additionally
+repository releases 34 books. Exact multi-backbone reproduction additionally
 depends on access to the commercial model APIs or user-deployed endpoints used
 by each backbone. The public subset supports the complete released pipeline,
 inspection of the annotation format, and evaluation on the released material.
