@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# set -x  # 需要看完整展开命令时再打开
+# set -x  # Uncomment to print expanded commands.
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "${REPO_ROOT}"
@@ -11,108 +11,85 @@ if ! "${PYTHON_BIN}" -c "import openai, PIL" >/dev/null 2>&1; then
   exit 1
 fi
 
-# ===================== 实验选择 =====================
-# 可用实验ID：
+# ===================== Experiment selection =====================
+# Runnable experiment IDs:
+# A1: full MOSAIC
+#     - Reuses the existing Step A, Step B, Step C, and merged outputs
+#     - Does not call a model again
+#
 # A2: w/o Step A
-#     - 不跑 StepA
-#     - 跑 StepB + StepC + merge
-#     - StepB / StepC 都不读取 StepA
+#     - Runs Step B, Step C, and merge without Step A inputs
 #
 # A3: A + fixed-window C
-#     - 复用完整方法的 StepA
-#     - 不跑 StepB
-#     - 只跑 StepC + merge
-#     - StepC 使用 fixed-window
+#     - Reuses Step A, skips Step B, and runs Step C with fixed windows
 #
 # A4: A + full-book C
-#     - 复用完整方法的 StepA
-#     - 不跑 StepB
-#     - 只跑 StepC + merge
-#     - StepC 使用 whole-book
+#     - Reuses Step A, skips Step B, and runs Step C on the full book
 #
-# A5: A→B→C（完整方法）
-#     - 直接复用完整方法已有结果
-#     - 不重新调用模型
+# B2: w/o Summary Context (Step B)
+#     - Reuses Step A and removes book and page summaries from Step B
 #
-# B2: w/o Summary Context（StepB）
-#     - 复用完整方法的 StepA
-#     - 只跑 StepB
-#     - 关闭 StepB 的 book summary + page summaries
+# B3: w/o Evidence Cues (Step B)
+#     - Reuses Step A and removes text and visual cues from Step B
 #
-# B3: w/o Evidence Cues（StepB）
-#     - 复用完整方法的 StepA
-#     - 只跑 StepB
-#     - 关闭 StepB 的 text cues + visual cues
+# B4: w/o Emotion Candidates (Step B)
+#     - Reuses Step A and removes emotion candidates from Step B
 #
-# B4: w/o Emotion Candidates（StepB）
-#     - 复用完整方法的 StepA
-#     - 只跑 StepB
-#     - 关闭 StepB 的 emotion candidates
-#
-# B5: w/o Rationale Output（StepB）
-#     - 复用完整方法的 StepA
-#     - 只跑 StepB
-#     - 关闭 StepB 的 “依据” 输出
+# B5: w/o Rationale Output (Step B)
+#     - Reuses Step A and removes rationale output from Step B
 #
 # C2: w/o Evidence Cues (Step C)
-#     - 复用完整方法的 StepA + StepB
-#     - 只跑 StepC + merge
-#     - Step C configuration: No Summary + No Emotion Candidates + Evidence + Anchor
-#     - 该组在此基础上关闭 Evidence（text cues + visual cues）
+#     - Reuses Step A and Step B, then removes text and visual cues from Step C
 #
 # C3: w/o Anchor Hint (Step C)
-#     - 复用完整方法的 StepA + StepB
-#     - 只跑 StepC + merge
-#     - Step C configuration: No Summary + No Emotion Candidates + Evidence + Anchor
-#     - 该组在此基础上关闭 Anchor Hint
+#     - Reuses Step A and Step B, then removes the continuity anchor from Step C
 #
 # C4: w/o Evidence + Anchor (Step C)
-#     - 复用完整方法的 StepA + StepB
-#     - 只跑 StepC + merge
-#     - Step C configuration: No Summary + No Emotion Candidates + Evidence + Anchor
-#     - 该组在此基础上同时关闭 Evidence 和 Anchor Hint
+#     - Reuses Step A and Step B, then removes both inputs from Step C
 #
-# 选择实验：
+# A5 in Table 3 is the Full-book E2E reference. Generate it with
+# run_baselines.sh rather than this ablation wrapper.
+#
+# Select an experiment:
 EXP_ID="${1:-C4}"
 
 
-# ===================== Full MOSAIC 基准结果位置 =====================
-# 这里固定指向你已经跑好的完整方法结果目录
+# ===================== Full MOSAIC output =====================
 FULL_MOSAIC_ROOT="./results/mosaic/gpt-4o"
 
-# ===================== 模型配置 =====================
-# 本轮消融统一使用 gpt-4o
+# ===================== Model configuration =====================
+# The paper's ablations use GPT-4o for all three steps.
 MODEL_STEPA="gpt-4o"
 MODEL_STEPB="gpt-4o"
 MODEL_STEPC="gpt-4o"
 
-# ===================== A3 fixed-window 配置 =====================
-# 仅 A3 使用；A2/A4/B2-B5/C2-C4 会自动忽略这个参数
+# ===================== A3 fixed-window configuration =====================
+# Only A3 uses this value; the other experiments ignore it.
 WINDOW_SIZE_STEPC=4
 
-# ===================== 选书方式 =====================
-# 方式1：通配
+# ===================== Book selection =====================
+# Glob:
 #   --book-glob 'book_*.json'
-# 方式2：单本
+# One book:
 #   --book-glob 'book_4.json'
 #   --book-glob 'book_4'
-# 方式3：区间
+# Range:
 #   --book-glob 'book_1-book_50'
-# 方式4：点名多本（中英文逗号/顿号/空格均可）
+# Explicit list (comma- or space-separated):
 #   --book-glob 'book_1,book_6,book_50'
-# 默认使用区间：
+# The default is a one-book smoke test.
 BOOKS_DIR="./data/books"
 BOOK_GLOB='book_1'
 BATCH_LIMIT=0
 
-# ===================== Payload / 推理控制 =====================
-# 打开后：新跑的阶段会写 payload，便于检查实验配置是否正确
+# ===================== Payload and execution controls =====================
+# Save request payloads for newly executed stages.
 DUMP_PAYLOAD=1
 
-# 是否优先复用已存在产物
+# Reuse existing artifacts when available.
 REUSE_EXISTING=1
 
-# 是否强制重跑
+# Force stages to run again.
 FORCE_RUN=0
 
 # The paper does not set these optional generation controls.

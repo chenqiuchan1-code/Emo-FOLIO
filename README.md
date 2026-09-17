@@ -134,20 +134,11 @@ default selection processes `book_1.json` to limit API cost.
 | Ablation | `EXP_ID` or the first command argument, `BOOK_GLOB` | `bash scripts/inference/run_ablation.sh C2` |
 
 ```bash
-# Full-book E2E; enable --cot in the shell file for CoT
-bash scripts/inference/run_baselines.sh
-
 # CoT without editing the shell file
 USE_COT=1 bash scripts/inference/run_baselines.sh
 
-# Step A -> Step B -> Step C -> merge
-bash scripts/inference/run_mosaic.sh
-
 # Run the released 50-book subset
 BOOK_GLOB=book_1-book_50 bash scripts/inference/run_mosaic.sh
-
-# Example ablation
-bash scripts/inference/run_ablation.sh C2
 ```
 
 Baseline outputs are written under `results/baselines/<model>/`. MOSAIC
@@ -157,11 +148,7 @@ predictions under `results/mosaic/<model>/merged/`.
 The checked-in paper-aligned defaults use a 512-pixel maximum image side,
 temperature 0.2, no explicit reasoning-effort or output-token limit, ordered
 page inputs, the same backbone across the three MOSAIC steps, and the final
-Step B/Step C information configuration described in the paper. The paper
-reports the arithmetic mean of two independent runs on the non-public
-200-book test set. The released 50-book subset supports execution and
-evaluation of the complete pipeline but cannot reproduce the full reported
-scores exactly.
+Step B/Step C information configuration described in the paper.
 
 The Python modules remain available as lower-level interfaces. Use
 `python -m scripts.inference.run_baselines --help` or
@@ -228,14 +215,30 @@ python scripts/check_environment.py --scope ocr
 bash tools/data_processing/run_ocr.sh
 ```
 
-Set the input and output paths in `run_ocr.sh` before execution.
-Raw scans are not distributed in this repository; the OCR utility therefore
-runs on user-supplied images and writes to `outputs/ocr/` by default. On its
-first real OCR run, PaddleOCR downloads the required recognition models.
+Before execution, edit the **User configuration** block at the top of
+`tools/data_processing/run_ocr.sh`:
+
+- `INITIAL_ROOT`: user-supplied scans arranged as category/book/page files;
+- `PICTURE_ROOT`: destination for text-free page images;
+- `BOOKS_ROOT`: destination for OCR-derived book JSON files;
+- `TYPES` and `BOOKS`: optional category and book selectors;
+- `DO_LIST` and `DRY_RUN`: non-writing inspection modes.
+
+The OCR thresholds below those paths already contain the released defaults and
+normally need no adjustment. Raw scans are not distributed in this repository;
+generated files are written under `outputs/ocr/` by default. On its first real
+OCR run, PaddleOCR downloads the required recognition models.
 
 ## Public data subset and copyright
 
-The full Emo-FOLIO benchmark contains 234 picture books. This repository contains a 50-book public subset with corrected page text, text-free page images, and human annotations. The code license does **not** grant rights to third-party picture-book content. See [DATA_NOTICE.md](DATA_NOTICE.md) before redistributing or reusing any data files.
+The full Emo-FOLIO benchmark contains 234 picture books. The paper reports
+results on a separate 200-book test set, while this repository contains a
+50-book public subset with corrected page text, text-free page images, and
+human annotations. The subset supports the complete pipeline but does not
+reproduce the paper's full-test scores exactly. The code license does **not**
+grant rights to third-party picture-book content. See
+[DATA_NOTICE.md](DATA_NOTICE.md) before redistributing or reusing any data
+files.
 
 Additional research materials may be made available upon reasonable request, subject to copyright and other applicable restrictions.
 

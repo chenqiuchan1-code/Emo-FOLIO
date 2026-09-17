@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Full-book E2E and CoT inference over one or more book JSON files.
-- 输出到 ./results
-- 支持 picture_dir 在 JSON 同级或上级“兄弟目录”的相对解析
-- 缺图会统一打印并附在结果文件尾部（若 --allow-missing-images）
+"""Run Full-book E2E or CoT inference over one or more book JSON files.
 
-用法：
-Use `python -m scripts.inference.run_baselines --help` or edit the accompanying
-`run_baselines.sh` wrapper.
+Use ``python -m scripts.inference.run_baselines --help`` for the command-line
+interface or edit the configuration block in ``run_baselines.sh``.
 """
 
 import os
@@ -70,12 +65,6 @@ HF_ENDPOINT_API_KEY_ENV = "HF_ENDPOINT_API_KEY"
 HF_INTERNVL35_8B_BASE_URL_ENV = "HF_INTERNVL35_8B_BASE_URL"
 HF_INTERNVL35_38B_BASE_URL_ENV = "HF_INTERNVL35_38B_BASE_URL"
 
-# LLaVA-OneVision-1.5 Hugging Face endpoints
-HF_LLAVA_OV15_4B_BASE_URL_ENV = "HF_LLAVA_OV15_4B_BASE_URL"
-HF_LLAVA_OV15_8B_BASE_URL_ENV = "HF_LLAVA_OV15_8B_BASE_URL"
-HF_LLAVA_OV15_4B_MODEL_NAME_ENV = "HF_LLAVA_OV15_4B_MODEL_NAME"
-HF_LLAVA_OV15_8B_MODEL_NAME_ENV = "HF_LLAVA_OV15_8B_MODEL_NAME"
-
 HF_IMAGE_REPO_ID_ENV = "HF_IMAGE_REPO_ID"
 HF_IMAGE_REVISION_ENV = "HF_IMAGE_REVISION"
 HF_IMAGE_ROOT_ENV = "HF_IMAGE_ROOT"
@@ -91,18 +80,8 @@ def is_internvl35_38b_model(model: str) -> bool:
 def is_internvl_model(model: str) -> bool:
     return is_internvl35_8b_model(model) or is_internvl35_38b_model(model)
 
-# LLaVA model aliases
-def is_llava_ov15_4b_model(model: str) -> bool:
-    return str(model or "").lower() == "llava-ov15-4b"
-
-def is_llava_ov15_8b_model(model: str) -> bool:
-    return str(model or "").lower() == "llava-ov15-8b"
-
-def is_llava_model(model: str) -> bool:
-    return is_llava_ov15_4b_model(model) or is_llava_ov15_8b_model(model)
-
 def use_hf_dataset_image_url(model: str) -> bool:
-    if not (is_internvl_model(model) or is_llava_model(model)):
+    if not is_internvl_model(model):
         return False
     source = os.getenv(INTERNVL_IMAGE_SOURCE_ENV, "local").strip().lower() or "local"
     if source not in {"local", "remote"}:
@@ -114,10 +93,6 @@ def _get_hf_endpoint_base_url(model: str) -> str:
         return os.getenv(HF_INTERNVL35_8B_BASE_URL_ENV, "").strip()
     if is_internvl35_38b_model(model):
         return os.getenv(HF_INTERNVL35_38B_BASE_URL_ENV, "").strip()
-    if is_llava_ov15_4b_model(model):
-        return os.getenv(HF_LLAVA_OV15_4B_BASE_URL_ENV, "").strip()
-    if is_llava_ov15_8b_model(model):
-        return os.getenv(HF_LLAVA_OV15_8B_BASE_URL_ENV, "").strip()
     return ""
 
 def is_qwen_model(model: str) -> bool:
@@ -134,19 +109,6 @@ def resolve_api_model_name(model: str) -> str:
     if m == "internvl35-38b":
         return "OpenGVLab/InternVL3_5-38B-Instruct"
 
-    # Model identifiers exposed by the LLaVA endpoints.
-    if m == "llava-ov15-4b":
-        return os.getenv(
-            HF_LLAVA_OV15_4B_MODEL_NAME_ENV,
-            "LLaVA-OneVision-1.5-4B-Instruct"
-        ).strip()
-
-    if m == "llava-ov15-8b":
-        return os.getenv(
-            HF_LLAVA_OV15_8B_MODEL_NAME_ENV,
-            "LLaVA-OneVision-1.5-8B-Instruct"
-        ).strip()
-
     return m
 
 def make_client_for_model(model: str) -> OpenAI:
@@ -162,7 +124,7 @@ def make_client_for_model(model: str) -> OpenAI:
             raise RuntimeError("当前模型为 Qwen，但未设置 DASHSCOPE_API_KEY。")
         return OpenAI(api_key=api_key, base_url=DASHSCOPE_BASE_URL)
 
-    if is_internvl_model(model) or is_llava_model(model):
+    if is_internvl_model(model):
         api_key = os.getenv(HF_ENDPOINT_API_KEY_ENV, "").strip()
         base_url = _get_hf_endpoint_base_url(model)
         if not api_key:
@@ -395,19 +357,10 @@ def _apply_cot_prompt(prompt_head: str, cot_enabled: bool, cot_hint: str) -> str
 
 
 def _resolve_out_dir(out_arg: str, model: str, cot_enabled: bool, base_dir: Path) -> Path:
-    """
-    自动输出目录规则：
-    - 普通 baseline：
-        ./results/<model>
-    - CoT baseline：
-        ./result_CoT/<model>
+    """Resolve baseline and CoT output directories.
 
-    兼容两种传法：
-    1) --out ./results
-    2) --out ./results/<model>
-
-    只要检测到 cot_enabled=True，且 out_arg 属于“默认 baseline 目录系”，
-    就自动改写到 ./result_CoT/<model>。
+    The default roots are ``results/baselines`` and ``results/cot``. Explicit
+    custom output paths are preserved.
     """
     out = Path(out_arg).expanduser()
 
@@ -502,7 +455,7 @@ def _dump_payload_preview(
     log(f"🧾 Baseline payload preview saved: {preview_path}")
     return preview_path
 
-# ---------- API 统一适配（稳健版） ----------
+# ---------- Provider API compatibility ----------
 def call_openai_compat(client, *, model: str, messages,
                        temperature: float = 0.2,
                        reasoning_effort: str | None = None,
@@ -662,9 +615,7 @@ def call_openai_compat(client, *, model: str, messages,
 
 def call_with_retries(client=None, payload=None, fn=None, max_retries=5, base_delay=2.0, timeout=600):
     """
-    通用重试器：
-    - 新用法（推荐）：传 fn=lambda: call_openai_compat(...)
-    - 旧用法（兼容）：传 payload=dict(...)，会自动判断走 Responses 或 Chat
+    Retry a provider request supplied as a callable or legacy payload.
     """
     import time, random
     last_err = None
@@ -675,7 +626,7 @@ def call_with_retries(client=None, payload=None, fn=None, max_retries=5, base_de
             if fn is not None:
                 return fn()
 
-            # 旧用法：自动识别 payload 结构
+            # Retain payload dispatch for backward compatibility.
             if not isinstance(payload, dict):
                 raise ValueError("call_with_retries: 需要提供 fn= 或 payload=dict(...)")
             if client is None:
@@ -815,7 +766,7 @@ def run_one(json_path: Path, out_dir: Path, model, prompt_head, prompt_tail,
     out_path.write_text(result, encoding="utf-8")
     log(f"✅ 已保存：{out_path}")
 
-# ======== 与 mosaic_driver 对齐的“选书逻辑”（仅此改动点） ========
+# ======== Book selection ========
 
 _SPLIT_SEP_RE = re.compile(r"[,\s，、]+")
 

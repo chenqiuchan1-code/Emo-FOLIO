@@ -26,12 +26,6 @@ HF_ENDPOINT_API_KEY_ENV = "HF_ENDPOINT_API_KEY"
 HF_INTERNVL35_8B_BASE_URL_ENV = "HF_INTERNVL35_8B_BASE_URL"
 HF_INTERNVL35_38B_BASE_URL_ENV = "HF_INTERNVL35_38B_BASE_URL"
 
-# LLaVA-OneVision-1.5 Hugging Face endpoints
-HF_LLAVA_OV15_4B_BASE_URL_ENV = "HF_LLAVA_OV15_4B_BASE_URL"
-HF_LLAVA_OV15_8B_BASE_URL_ENV = "HF_LLAVA_OV15_8B_BASE_URL"
-HF_LLAVA_OV15_4B_MODEL_NAME_ENV = "HF_LLAVA_OV15_4B_MODEL_NAME"
-HF_LLAVA_OV15_8B_MODEL_NAME_ENV = "HF_LLAVA_OV15_8B_MODEL_NAME"
-
 HF_IMAGE_REPO_ID_ENV = "HF_IMAGE_REPO_ID"
 HF_IMAGE_REVISION_ENV = "HF_IMAGE_REVISION"
 HF_IMAGE_ROOT_ENV = "HF_IMAGE_ROOT"
@@ -47,18 +41,8 @@ def is_internvl35_38b_model(model: str) -> bool:
 def is_internvl_model(model: str) -> bool:
     return is_internvl35_8b_model(model) or is_internvl35_38b_model(model)
 
-# LLaVA model aliases
-def is_llava_ov15_4b_model(model: str) -> bool:
-    return str(model or "").lower() == "llava-ov15-4b"
-
-def is_llava_ov15_8b_model(model: str) -> bool:
-    return str(model or "").lower() == "llava-ov15-8b"
-
-def is_llava_model(model: str) -> bool:
-    return is_llava_ov15_4b_model(model) or is_llava_ov15_8b_model(model)
-
 def use_hf_dataset_image_url(model: str) -> bool:
-    if not (is_internvl_model(model) or is_llava_model(model)):
+    if not is_internvl_model(model):
         return False
     source = os.getenv(INTERNVL_IMAGE_SOURCE_ENV, "local").strip().lower() or "local"
     if source not in {"local", "remote"}:
@@ -70,10 +54,6 @@ def _get_hf_endpoint_base_url(model: str) -> str:
         return os.getenv(HF_INTERNVL35_8B_BASE_URL_ENV, "").strip()
     if is_internvl35_38b_model(model):
         return os.getenv(HF_INTERNVL35_38B_BASE_URL_ENV, "").strip()
-    if is_llava_ov15_4b_model(model):
-        return os.getenv(HF_LLAVA_OV15_4B_BASE_URL_ENV, "").strip()
-    if is_llava_ov15_8b_model(model):
-        return os.getenv(HF_LLAVA_OV15_8B_BASE_URL_ENV, "").strip()
     return ""
 
 def is_qwen_model(model: str) -> bool:
@@ -90,18 +70,6 @@ def resolve_api_model_name(model: str) -> str:
     if m == "internvl35-38b":
         return "OpenGVLab/InternVL3_5-38B-Instruct"
 
-    if m == "llava-ov15-4b":
-        return os.getenv(
-            HF_LLAVA_OV15_4B_MODEL_NAME_ENV,
-            "LLaVA-OneVision-1.5-4B-Instruct"
-        ).strip()
-
-    if m == "llava-ov15-8b":
-        return os.getenv(
-            HF_LLAVA_OV15_8B_MODEL_NAME_ENV,
-            "LLaVA-OneVision-1.5-8B-Instruct"
-        ).strip()
-
     return m
 
 def make_client_for_model(model: str) -> OpenAI:
@@ -117,7 +85,7 @@ def make_client_for_model(model: str) -> OpenAI:
             raise RuntimeError("当前模型为 Qwen，但未设置 DASHSCOPE_API_KEY。")
         return OpenAI(api_key=api_key, base_url=DASHSCOPE_BASE_URL)
 
-    if is_internvl_model(model) or is_llava_model(model):
+    if is_internvl_model(model):
         api_key = os.getenv(HF_ENDPOINT_API_KEY_ENV, "").strip()
         base_url = _get_hf_endpoint_base_url(model)
         if not api_key:
@@ -648,8 +616,7 @@ def call_openai_compat(client, *, model: str, messages, temperature: float = 0.2
 def call_with_retries(client=None, payload=None, fn=None, max_retries=5, base_delay=2.0, timeout=600):
     """
     通用重试器：
-    - 新用法（推荐）：传 fn=lambda: call_openai_compat(...)
-    - 旧用法（兼容）：传 payload=dict(...)，自动判断走 Responses 或 Chat
+    Accepts either a request callable or a legacy provider payload.
     """
     import random
 

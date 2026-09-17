@@ -180,7 +180,7 @@ def _should_run(step: str, from_step: str, force: bool, reuse: bool, artifact: P
     """
     order = ["stepA", "stepB", "stepC", "merge"]
     if from_step not in order and from_step != "auto":
-        # 容错：若传入未知 from_step（不大可能），回退到 auto（即按 artifact 存在判断）
+        # Unknown values fall back to automatic artifact-based stage selection.
         from_step = "auto"
 
     if force:

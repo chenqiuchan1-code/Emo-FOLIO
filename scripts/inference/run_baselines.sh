@@ -11,8 +11,9 @@ if ! "${PYTHON_BIN}" -c "import openai, PIL" >/dev/null 2>&1; then
   exit 1
 fi
 
-# ===== 模型选择 =====
+# ===== Model selection =====
 # MODEL="gpt-4o"
+# MODEL="gpt-4o-mini"
 # MODEL="gemini-2.5-pro"
 # MODEL="gemini-2.5-flash"
 # MODEL="qwen3-vl-8b-instruct"
@@ -35,7 +36,7 @@ DRY_RUN="${DRY_RUN:-0}"
 REASONING_EFFORT="${REASONING_EFFORT:-}"
 TEXT_VERBOSITY="${TEXT_VERBOSITY:-}"
 
-# ===== 输出目录：按模型自动分子文件夹 =====
+# Output directory, grouped by model.
 OUT_ROOT="${OUT_ROOT:-./results/baselines}"
 OUT_DIR="${OUT_ROOT}/${MODEL}"
 
@@ -43,29 +44,29 @@ args=(
   ./data/books
   --book-glob "${BOOK_GLOB}"
 
-  # ===== 💾 输出控制 =====
-  --out "${OUT_DIR}"                              # 📁 输出目录：按模型自动分子文件夹
+  # Output control
+  --out "${OUT_DIR}"
 
-  # ===== 🤖 模型调用 =====
-  --model "${MODEL}"                              # 🤖 可在文件顶部统一切换模型
+  # Model service
+  --model "${MODEL}"
 
-  # ===== 🔎 对照实验：输入规模统计 + 图片质量控制 =====
-  --trace-tokens                                  # ✅ 打印 text tokens 估算 + 图片dataURL长度统计
+  # Input diagnostics and image sizing
+  --trace-tokens
   --image-detail "${IMAGE_DETAIL}"
   --max-image-side "${MAX_IMAGE_SIDE}"
-  #--no-inject-images                            # ✅ baseline 消融：关闭图片注入，仅保留逐页文字
+  # --no-inject-images  # Text-only diagnostic setting
 
-  # ===== 📜 自定义 prompt（可选）=====
-  # --prompt-head-file ./prompt_head.txt          # （可选）替换默认开头提示
-  # --prompt-tail-file ./prompt_tail.txt          # （可选）替换默认任务要求
-  # --instructions-file ./instructions.txt        # （可选）替换 GPT 指令说明
+  # Optional prompt overrides
+  # --prompt-head-file ./prompt_head.txt
+  # --prompt-tail-file ./prompt_tail.txt
+  # --instructions-file ./instructions.txt
 )
 
 if [[ "${USE_COT}" == "1" ]]; then args+=( --cot ); fi
 if [[ "${DUMP_PAYLOAD}" == "1" ]]; then args+=( --dump-payload ); fi
 if [[ "${DRY_RUN}" == "1" ]]; then args+=( --dry-run --dump-payload ); fi
 
-# ===== 按模型类型追加可选参数 =====
+# Add provider-specific optional parameters.
 case "${MODEL}" in
   gpt-5*|gemini-*)
     if [[ -n "${REASONING_EFFORT}" ]]; then

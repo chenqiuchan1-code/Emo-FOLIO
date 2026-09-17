@@ -4,23 +4,23 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "${REPO_ROOT}"
 
-# ===================== 参数区（按需改）=====================
+# ===================== User configuration =====================
 
 PY="${PYTHON_BIN:-python}"
 SCRIPT="./tools/data_processing/pb_ocr_cleanup_to_json.py"
 
-# 输入/输出根目录
+# Input and output roots
 INITIAL_ROOT="./inputs/raw_books"        # user-supplied scans: category/book/pages
 PICTURE_ROOT="./outputs/ocr/images"      # text-free page images
-BOOKS_ROOT="./outputs/ocr/books"         # corrected book JSON files
+BOOKS_ROOT="./outputs/ocr/books"         # OCR-derived book JSON files
 
-# 选择器（留空=全部）
-TYPES=""                          # 例如：情景教育类,益智类
-BOOKS="1..50"                             # 例如：book_8、8..12 或书名关键词
+# Optional selectors; leave empty to process all discovered books.
+TYPES=""                                 # Comma-separated category names.
+BOOKS="1..50"                            # Example: book_8, 8..12, or a title keyword.
 
-# 只列出/只预演（true/false）
-DO_LIST=false                     # true: 仅列出将要处理的书，不执行
-DRY_RUN=false                     # true: 仅预览，不写文件
+# Inspection controls (true/false)
+DO_LIST=false                            # List selected books without processing.
+DRY_RUN=false                            # Preview processing without writing files.
 
 # OCR and text-removal parameters
 SCALE=1.8
@@ -33,12 +33,12 @@ MASK_MIN_PROB=0.80
 MAX_MASK_AREA_FRAC=0.12
 MAX_MASK_H_FACTOR=3.5
 
-# 段落合并参数
+# OCR paragraph-merging parameters
 X_OVERLAP=0.35
 VGAP_FACTOR=1.30
 LINE_MERGE_FACTOR=0.60
 
-# ===================== 执行区（一般不改）=====================
+# ===================== Execution (normally unchanged) =====================
 
 cmd=(
   "$PY" "$SCRIPT"

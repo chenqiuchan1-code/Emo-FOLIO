@@ -15,6 +15,13 @@ BOOKS_DIR_DEFAULT = str(REPO_ROOT / "data" / "books")
 BOOK_GLOB_DEFAULT = "book_*.json"
 
 EXPERIMENTS = {
+    "A1": {
+        "name": "A1__A_B_C_full",
+        "reuse": ["stepA", "stepB", "stepC", "merged"],
+        "run_from_step": None,
+        "run_flags": [],
+        "need_synthetic_merged": False,
+    },
     "A2": {
         "name": "A2__w_o_stepA",
         "reuse": [],
@@ -48,13 +55,6 @@ EXPERIMENTS = {
             "--disable-stepB-input-stepC",
             "--chunk-mode-stepC", "whole_book",
         ],
-        "need_synthetic_merged": False,
-    },
-    "A5": {
-        "name": "A5__A_B_C_full",
-        "reuse": ["stepA", "stepB", "stepC", "merged"],
-        "run_from_step": None,
-        "run_flags": [],
         "need_synthetic_merged": False,
     },
     "B2": {
@@ -374,7 +374,7 @@ def main():
         encoding="utf-8"
     )
 
-    # 3) 若该实验完全复用（A5），直接结束
+    # 3) If the experiment fully reuses existing outputs (A1), stop here.
     if exp["run_from_step"] is None:
         print(f"✅ {args.exp_id} 仅复用已有完整结果，无需模型调用：{out_root}")
         return
