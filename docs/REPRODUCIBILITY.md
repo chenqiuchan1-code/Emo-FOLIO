@@ -143,14 +143,11 @@ python scripts/check_environment.py --scope ocr
 bash tools/data_processing/run_ocr.sh
 ```
 
-Raw scans are not distributed. Before running the tool, edit the **User
-configuration** block at the top of `tools/data_processing/run_ocr.sh`.
-`INITIAL_ROOT` selects the user-supplied scans; `PICTURE_ROOT` and `BOOKS_ROOT`
-set the image and JSON destinations; `TYPES` and `BOOKS` optionally restrict
-the selection. Use `DO_LIST=true` to inspect the selected books or
-`DRY_RUN=true` to preview processing without writing files. The OCR thresholds
-retain the released defaults and normally need no adjustment. PaddleOCR
-downloads its recognition models on the first real OCR run.
+Raw scans are not distributed. Before running the tool, use the **User
+configuration** block at the top of `tools/data_processing/run_ocr.sh` to set
+the input/output paths, optional book selection, and inspection controls. The
+OCR parameters retain the released defaults and normally need no adjustment.
+PaddleOCR downloads its recognition models on the first real OCR run.
 
 ## Reproducibility boundary
 

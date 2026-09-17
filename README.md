@@ -215,17 +215,10 @@ python scripts/check_environment.py --scope ocr
 bash tools/data_processing/run_ocr.sh
 ```
 
-Before execution, edit the **User configuration** block at the top of
-`tools/data_processing/run_ocr.sh`:
-
-- `INITIAL_ROOT`: user-supplied scans arranged as category/book/page files;
-- `PICTURE_ROOT`: destination for text-free page images;
-- `BOOKS_ROOT`: destination for OCR-derived book JSON files;
-- `TYPES` and `BOOKS`: optional category and book selectors;
-- `DO_LIST` and `DRY_RUN`: non-writing inspection modes.
-
-The OCR thresholds below those paths already contain the released defaults and
-normally need no adjustment. Raw scans are not distributed in this repository;
+Before execution, use the **User configuration** block at the top of
+`tools/data_processing/run_ocr.sh` to set the input/output paths, optional book
+selection, and inspection controls. The OCR parameters retain the released
+defaults and normally need no adjustment. Raw scans are not distributed;
 generated files are written under `outputs/ocr/` by default. On its first real
 OCR run, PaddleOCR downloads the required recognition models.
 
